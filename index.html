@@ -8,6 +8,14 @@
   <title>Final Project</title>
 
 
+  <script>
+  setInterval(function(){
+  var container = document.getElementById('content');
+  var tmp = container.innerHTML;
+  container.innerHTML= tmp;
+}, 27000 // length of the whole show in milliseconds
+  );
+  </script>
 </head>
 
 
@@ -27,8 +35,10 @@
   <body>
 
 
-    <div class="navbar clear-fix">
+    <div class="navbar">
       <ul>
+
+        
         <li><a  href="#home">Home</a></li>
           <li><a  href="#home">Features</a></li>
               <li><a  href="#home">The team</a></li>
@@ -46,7 +56,7 @@
               <div class="carousel">
 
               <div class="container">
-  <div class="css-carousel">
+  <div class="css-carousel" id="content">
     <img class="css-img call-img" src="media\3.png">
     <img class="css-img find-guide-img" src="media\2.png">
     <img class="css-img start-page-img" src="media\1.png">
@@ -71,6 +81,13 @@
 
 
 <div class="how-it-work">
+  <div id="how-it-work-p">
+    <p>How its work</p>
+  </div>
+  <div class="how-it-work-wrapper">
+
+
+
 
   <div class="feature">
 
@@ -87,6 +104,7 @@
   <div class="feature">
 
   </div>
+    </div>
 
 </div>
 
@@ -121,16 +139,11 @@
 
 
 
+
       </body>
 
 
 
 
 
-</html>
-
-
-<body>
-
-</body>
 </html>
