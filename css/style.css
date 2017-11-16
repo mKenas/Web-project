@@ -18,6 +18,7 @@ body{
   top:0;
   left:0;
   padding:0;
+  margin: 0;
   overflow-x: hidden;
 }
 
@@ -53,6 +54,11 @@ body{
 .bar-icon{
   display: none;
 }
+
+.navbar li:first-child{
+  display: none;
+}
+
 
 /* This fix the margin collapsing after floating the ul element */
 .clear-fix::after{
@@ -109,7 +115,7 @@ overflow: hidden;
   width: 1663px;
   margin: 0 auto;
 
-  top:70px;
+  top:65px;
 
 }
 /*2 */
@@ -470,8 +476,21 @@ width: 100vw;
 }
 
 .bar-icon{
+display:block;
+width: 30px;
+height: 30px;
 
+}
 
+.navbar li{
+  display: none;
+}
+.navbar li:first-child{
+  display: block;
+}
+
+.navbar li a :active{
+  display: block;
 }
 .carousel, .container, .css-carousel, .mobilBilde,.call-img,.find-guide-img,.start-page-img,.feedback-img,.msg-img{
   display: none;
