@@ -29,17 +29,12 @@ body{
 .navbar{
   display: flex;
   background-color:rgba(0, 0, 0, 0.8);
-  float: left;
-  padding: 3px 20px;
-
 }
-
 
 .navbar a{
     align-self: flex-start;
-    padding: 20px 20px;
+
     color: #fff;
-    text-decoration: none;
     transition: all ease-in-out .25s ;
 
 }
@@ -47,25 +42,36 @@ body{
 
   background-color: rgba(30, 30, 30, 0.9);
 
+
 }
 .navbar a.bar-icon{
   display: none;
 
+}
 
+.logo{
+    width:150px;
+    height: 35px;
+    padding: 25px 20px 25px 20px;
 
 }
 
+.navbar a:not(:first-child){
+    padding: 32px 20px 32px 20px;
 
-
-
-/* This fix the margin collapsing after floating the ul element */
-.clear-fix::after{
-  content: "";
-  display: table;
-  clear: both;
+}
+.navbar a:not(:first-child):hover{
+    padding: 34px 20px 34px 20px;
 
 }
 
+.navbar a:first-child{
+margin-right: auto;
+}
+
+.navbar a:first-child:hover{
+background-color: rgba(0,0,0,0);
+}
 
 
 .carousel{
@@ -105,14 +111,13 @@ overflow: hidden;
   position: absolute;
   margin-top:345px;
   z-index: 100;
-min-height: 750px;
+  min-height: 750px;
   min-width: 1663px;
-
   height: 10%;
   width: 10vw;
   margin: 0 auto;
+  top:64px;
 
-  top:38px;
 
 }
 /*2 */
@@ -398,7 +403,7 @@ font-size:2em;
   position: relative;
   margin:0px 0px;
   padding: 0px;
-background-color: rgb(35, 102, 144);
+background-color: rgb(35, 102, 144)!important;
 /*   background-color: rgb(37, 95, 129);*/
   height: auto;
 
@@ -453,9 +458,8 @@ a {
 }
 
 #DownloadMe {
-    text-align: center;
-    font-size: 2em;
-
+      text-align: center;
+      font-size: 2em;
       margin: :75px auto 20px auto;
 }
 
