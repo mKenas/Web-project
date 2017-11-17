@@ -1,15 +1,19 @@
+*{
+  font-family: 'Quicksand', sans-serif;
+}
 
-body,.how-it-work, .carousel, .container, .css-carousel, .mobilBilde, .how-it-work-wrapper,.team, .site-footer {
+body,.how-it-work, .carousel, .container, .css-carousel, .mobile-img, .how-it-work-wrapper,.team,.DownloadImages,.site-footer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-body, .navbar, .carousel, .mobilBilde, .how-it-work, .how-it-work-wrapper, .video-container, .overlay, .sharing-p {
+body, .navbar, .carousel, .mobile-img, .how-it-work, .how-it-work-wrapper, .video-container, .overlay, .sharing-p {
     width: 100%;
+
 }
 
-body,.how-it-work{
+body,.how-it-work,.Download {
   flex-direction: column;
 
 }
@@ -23,22 +27,17 @@ body{
 }
 
 .navbar{
+  display: flex;
   background-color:rgba(0, 0, 0, 0.8);
-}
-.navbar ul{
-  list-style: none;
-  float: right;
-  padding: 20px 20px;
-
-}
-.navbar li{
-  display: inline-block;
   float: left;
+  padding: 3px 20px;
 
 }
+
 
 .navbar a{
-  padding: 33px 40px;
+    align-self: flex-start;
+    padding: 20px 20px;
     color: #fff;
     text-decoration: none;
     transition: all ease-in-out .25s ;
@@ -47,17 +46,16 @@ body{
 .navbar a:hover{
 
   background-color: rgba(30, 30, 30, 0.9);
-  border-bottom: 1.5px solid;
-  border-color: #eee;
 
 }
-.bar-icon{
+.navbar a.bar-icon{
   display: none;
+
+
+
 }
 
-.navbar li:first-child{
-  display: none;
-}
+
 
 
 /* This fix the margin collapsing after floating the ul element */
@@ -102,20 +100,19 @@ overflow: hidden;
 
 }
 
-.mobilBilde{
-  height: auto;
-
-}
-.mobilBilde img{
+.mobile-img img{
 
   position: absolute;
   margin-top:345px;
   z-index: 100;
-  height: 750px;
-  width: 1663px;
+min-height: 750px;
+  min-width: 1663px;
+
+  height: 10%;
+  width: 10vw;
   margin: 0 auto;
 
-  top:65px;
+  top:38px;
 
 }
 /*2 */
@@ -368,6 +365,7 @@ overflow: hidden;
 
 .how-it-work{
   margin:50px 0 0 0;
+  background-color: #f7f7f7;
 
 }
 
@@ -383,14 +381,15 @@ overflow: hidden;
 
 font-size:2em;
 
+
 }
 .feature{
 
-  height: 320px;
-  width: 340px;
-  background-color: #fff;
+  height: 280px;
+  width: 300px;
+  background-color: #fbfbfb;
   border-radius: 10px;
-  box-shadow: 0px 10px 20px #eee;
+  box-shadow: 0px 10px 20px rgba(50, 50, 50, 0.2);
   margin: 30px 30px;
 
 }
@@ -399,7 +398,8 @@ font-size:2em;
   position: relative;
   margin:0px 0px;
   padding: 0px;
-  background-color: #236690;
+background-color: rgb(35, 102, 144);
+/*   background-color: rgb(37, 95, 129);*/
   height: auto;
 
 
@@ -446,55 +446,101 @@ font-size:2em;
   margin-bottom: auto;
 
 }
+/* Mohammed sin Download section */
+
+a {
+    text-decoration: none;
+}
+
+#DownloadMe {
+    text-align: center;
+    font-size: 2em;
+
+      margin: :75px auto 20px auto;
+}
+
+.Download {
+
+    height: 30vh;
 
 
+}
+
+
+.DownloadImages {
+  width: 100%;
+    margin: auto;
+}
+
+
+
+#DownloadAndroid {
+
+    width: 27vw;
+
+
+}
+
+#DownloadApple{
+
+      width: 22vw;
+
+}
+
+/* Mohammed sin Download section */
+
+/* Mobile version*/
 @media only screen and (max-width:768px) {
-.navbar{
-width: 100vw;
+
+.navbar :not(:first-child) {
+  display: none;
 }
-.navbar ul{
-  float: none;
-  padding: 0px;
-}
-.navbar li{
+.navbar a.bar-icon {
   display:block;
-  float: none;
+  position: absolute;
+  margin-left: 90vw;
+font-weight: bold;
 
+ }
+.navbar.mobileNavBar {
+  flex-direction: column;
 
+}
+.navbar.mobileNavBar a.bar-icon {
+align-self: flex-end;
+margin-left: auto;
 
 
 }
-.navbar li a{
+
+.navbar.mobileNavBar a.bar-icon:hover {
+padding-right: 20px;
+}
+.navbar.mobileNavBar a {
+
   display: block;
-    padding: 20px 40px;
+
+
+
+
 
 }
 
-.navbar li a:hover{
+.navbar.mobileNavBar a:hover {
 
-  border-bottom:none;
-}
+  background-color: rgba(0,0,0,0);
+  color:rgba(150, 150, 150, 0.8);
+  padding-left: 15px;
 
-.bar-icon{
-display:block;
-width: 30px;
-height: 30px;
+
 
 }
 
-.navbar li{
+/* */
+.carousel, .container, .css-carousel, .mobile-img,.call-img,.find-guide-img,.start-page-img,.feedback-img,.msg-img{
   display: none;
 }
-.navbar li:first-child{
-  display: block;
-}
 
-.navbar li a :active{
-  display: block;
-}
-.carousel, .container, .css-carousel, .mobilBilde,.call-img,.find-guide-img,.start-page-img,.feedback-img,.msg-img{
-  display: none;
-}
 
 
 }
