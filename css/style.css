@@ -2,10 +2,17 @@
   font-family: 'Quicksand', sans-serif;
 }
 
-body,.how-it-work, .carousel, .container, .css-carousel, .mobile-img, .how-it-work-wrapper,.team,.team-member,.DownloadImages,.site-footer {
+body,.how-it-work, .carousel, .container, .css-carousel, .mobile-img, .how-it-work-wrapper,.team,.team-member,.DownloadImages {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer,.infoFooter,.social,.felleskv,.socialtext,.abonner {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
 }
 
 body, .navbar, .carousel, .mobile-img, .how-it-work, .how-it-work-wrapper, .video-container, .overlay, .sharing-p {
@@ -479,15 +486,50 @@ i{
   color: #c2c2c2;
 }
 
+/*----------------------footer----------------------*/
 
-.site-footer{
+.footer {
 
+  flex-direction: row;
   height: 30vh;
+  width: 100%;
   background-color: #344550;
-  width:100%;
-  margin-bottom: auto;
 
 }
+
+.felleskv {
+  flex-direction: column;
+}
+
+.infoFooter {
+  flex-direction: row;
+}
+
+socialtext {
+  flex-direction: column;
+}
+
+.social {
+  flex-direction: row;
+}
+
+#fh3 {
+  margin-bottom: 0px;
+}
+
+.social img {
+  height: 60px;
+  width: 35px;
+}
+
+.abonner {
+  flex-direction: column;
+}
+
+.test {
+  flex-direction: column;
+}
+
 /* Mohammed sin Download section */
 
 #DownloadMe {
