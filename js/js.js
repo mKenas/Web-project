@@ -1,14 +1,15 @@
 
-// This function make
+// This function repeat the carousel animation every 27 seconde.
 
   setInterval(function(){
   var container = document.getElementById('content');
   var tmp = container.innerHTML;
   container.innerHTML= tmp;
-}, 27000 // length of the whole show in milliseconds
+}, 27500
   );
 
-  function myFunction() {
+// This show change the class name of the navbar to apply the mobile style
+  function navbarMobile() {
     var x = document.getElementById("navbar");
     if (x.className === "navbar") {
         x.className += " mobileNavBar";
