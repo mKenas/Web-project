@@ -15,7 +15,7 @@ body,.how-it-work, .carousel, .container, .css-carousel, .mobile-img, .how-it-wo
 
 }
 
-body, .navbar, .carousel, .mobile-img, .how-it-work, .how-it-work-wrapper, .video-container, .overlay, .sharing-p {
+body, .navbar, .carousel, .mobile-img, .how-it-work, .how-it-work-wrapper, .video-container, .overlay, .sharing-p,.footer {
     width: 100%;
 
 }
@@ -505,12 +505,14 @@ i{
   flex-direction: row;
 }
 
-socialtext {
-  flex-direction: column;
-}
-
 .social {
   flex-direction: row;
+}
+
+#ih3 {
+
+  margin: 0px;
+
 }
 
 #fh3 {
@@ -522,6 +524,7 @@ socialtext {
   width: 35px;
 }
 
+
 .abonner {
   flex-direction: column;
 }
@@ -529,6 +532,19 @@ socialtext {
 .test {
   flex-direction: column;
 }
+
+.input[type=text] {
+
+  
+
+}
+
+.subscribe {
+
+  background-color:
+
+}
+
 
 /* Mohammed sin Download section */
 
