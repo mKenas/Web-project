@@ -50,7 +50,8 @@ body {
     left: 0;
     padding: 0;
     margin: 0;
-    overflow: auto overflow-x: hidden;
+    overflow: auto;
+    overflow-x: hidden;
     height: 100%;
     background-color: #f7f7f7;
 }
@@ -71,7 +72,6 @@ body {
 .navbar a {
     align-self: flex-start;
     text-decoration: none;
-
     color: #fff;
     transition: all ease-in-out .25s;
 
@@ -731,6 +731,89 @@ i {
 
 /*----------------------footer----------------------*/
 
+.FooterTop h3 {
+    text-align: center;
+    padding: 15px 0;
+}
+.FooterTop {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+.FooterInnhold {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*
+.SocialElement {
+    display: flex;
+    flex-wrap: wrap;
+}
+*/
+
+.FooterInnhold img {
+    height: 100px;
+    width: 100px;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.FooterBottom {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.FooterBottom p {
+    color: white;
+}
+
+.FooterEmail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 35px;
+}
+
+.FooterEmail h3 {
+    padding: 0;
+}
+
+.Abonner {
+    flex-direction: column;
+}
+
+.test {
+    flex-direction: column;
+}
+
+input[type=email] {
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+
+
+.Sub-button {
+    font-size: 15px;
+    background-color: pink;
+    border: none;
+}
+
+
+/* GAMLE FOOTER UNDER ----------------- */
+/*
 .footer {
 
     flex-direction: row;
@@ -763,8 +846,8 @@ i {
 }
 
 .social img {
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
 }
 
 .social a {
@@ -786,6 +869,7 @@ i {
     background-color:
 }
 
+*/
 
 /* Mohammed sin Download section */
 
