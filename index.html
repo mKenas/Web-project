@@ -3,27 +3,30 @@
 <html>
 
 <head>
-
+  <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <script src="js/js.js"></script>
-  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://use.fontawesome.com/f891a0aa13.js"></script>
   <title>Final Project</title>
 
 
 </head>
 
-  <body>
+  <body >
 
 
     <div class="navbar" id="navbar">
 
       <!--  <li><a  href="#home"><img class="bar-icon" src="media/baricon.svg" alt=""></a></li> -->
-              <a href="#home"><img class="logo" src="media/logo.svg" alt=""></a>
+              <a href="#home"><img class="logo" src="media/logo.svg" alt="" id="logoId"></a>
               <a  href="#home">Home</a>
-              <a  href="#home">Features</a>
-              <a  href="#home">The team</a>
-              <a href="#home">Contact us</a>
+              <a  href="#howitworks">How it works</a>
+              <a  href="#feature">Features</a>
+              <a  href="#team">The team</a>
+              <a href="#getitnow">Get it now</a>
               <a href="javascript:void(0);" class="bar-icon" onclick="navbarMobile()">&#9776;</a>
 
 
@@ -31,11 +34,12 @@
 
 
 
-    <div class="mobile-img">
-      <img src="media\15.png" alt="">
 
-    </div>
-              <div class="carousel">
+              <div class="carousel" id="home">
+                <div class="mobile-img">
+               <!-- <img src="media\15.png" alt=""> -->
+
+                </div>
 
               <div class="container">
   <div class="css-carousel" id="content">
@@ -49,34 +53,62 @@
 
   </div>
 
+<div class="intro-section" id="intro-section-id" onwheel="fadeIn()">
+  <img src="media/intro-img.jpg" alt="">
 
+    <h1 id="intro-section-h1">Closing the digital gap, one connection at a time. </h1>
+    <p id="intro-section-text">As technology is evolving faster than ever, some people are struggling to keep up.
+Be My It Guide is an app that connects users with technological issues to IT-guides that will aid them in solving them.
+</p>
 
+</div>
 
-<div class="how-it-work">
-  <div id="how-it-work-p">
-  <h2> How it works</h2>
+<div class="how-it-works-section" id="howitworks">
+<h1>How it works</h1>
+
+  <img src="media/how-it-works.png" alt="How it works image">
+  <div class="How-it-works-text">
+    <p>After You got the app installed on your device and register yourself in very simple way using your device pincode or even your fingerprint. </p>
+
   </div>
-  <div class="how-it-work-wrapper">
+
+</div>
+
+
+<div class="feature-section" id="feature">
+
+  <h2> Features</h2>
+
+  <div class="feature-wrapper">
 
 
 
 
   <div class="feature">
-<h3> Easy to use</h3>
+  <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
+  <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+<h3> Anyone can use it!</h3>
+<p>Registration process is easier than ever! By entering your device PIN code or even your fingerprint we bring your data and make a user for you. </p>
   </div>
 
   <div class="feature">
+    <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
+    <i class="fa fa-star fa-2x" aria-hidden="true"></i>
   <h3> Easy to use</h3>
 
   </div>
 
   <div class="feature">
+    <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
+    <i class="fa fa-star fa-2x" aria-hidden="true"></i>
 
   <h3> Easy to use</h3>
 
   </div>
 
   <div class="feature">
+    <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
+    <i class="fa fa-star fa-2x" aria-hidden="true"></i>
   <h3> Easy to use</h3>
 
   </div>
@@ -86,10 +118,11 @@
 
 
 
-<div class="video-container">
+
+<div class="video-container" onwheel="replayVideo()">
 
            <video autoplay loop muted>
-               <source src="media\1.mov" type="video/mp4" />
+               <source src="media\screen-sharing.mp4" type="video/mp4" />
 
            </video>
            <div >
@@ -105,27 +138,50 @@
 </div>
        </div>
 
+
+       <div class="save-sharing" >
+
+         <div class="save-sharing-txt">
+         <p>Sharing your screen is save more than ever.</p>
+           </div>
+       <div class="video-sec">
+
+
+         <video id="save-sharing-video" autoplay  muted onended="showReplayText()">
+             <source src="media\save-sharing.mp4" type="video/mp4" />
+             </video>
+             <i class="fa fa-play-circle-o fa-2x" id="replay-icon"></i>
+             <p id="play-again-txt"onclick="replayVideo()">Play again</p>
+             </div>
+       </div>
+
       <h2> The team</h2>
-       <div class=team>
+       <div class=team id="team">
          <div class="team-member">
             <i class="fa fa-user fa-5x"> </i>
+            <p>Bezawit Walelegn</p>
          </div>
          <div class="team-member">
             <i class="fa fa-user fa-5x"> </i>
+            <p>Emre Yarar</p>
          </div>
          <div class="team-member">
             <i class="fa fa-user fa-5x"> </i>
+            <p>Mohamad Kenas</p>
          </div>
          <div class="team-member">
            <i class="fa fa-user fa-5x"> </i>
+           <p>Mohammed Kamal</p>
          </div>
          <div class="team-member">
             <i class="fa fa-user fa-5x"> </i>
+            <p>Maha Shams</p>
+
          </div>
 
        </div>
 
-       <div class="Download">
+       <div class="Download" id="getitnow">
 
             <h1 id="DownloadMe">Download Now</h1>
 
@@ -146,9 +202,38 @@
 
 </div>
 
-         <div class="site-footer">
+<div class="FooterTop">
+<h3>Connect with us on social media!</h3>
+<div class="FooterInnhold">
+  <div class="SocialElement">
+      <a class="facebook" href="http://facebook.com/"><img  src="media/facebook.svg"></a>
+      </div>
+      <div class="SocialElement">
+      <a class="twitter" href="http://twitter.com"><img  src="media/twitter.svg"></a>
+      </div>
+      <div class="SocialElement">
+      <a class="instagram" href="http://instagram.com"><img  src="media/instagram.svg"></a>
+      </div>
+      <div class="SocialElement">
+      <a class="linkedin" href="http://linkedin.com"><img  src="media/linkedin.svg"></a>
+</div>
+  </div>
+<div class="FooterEmail">
+  <h3>Subscribe to our newsletter!</h3>
+  <div class="Abonner">
+              <form action="">
+                  <input type="email" name="email" placeholder="Email...">
+                  <button class="Sub-button">Subscribe!</button>
 
-         </div>
+
+
+              </form>
+              </div>
+</div>
+
+<div class="FooterBottom">
+    <p>Copyright &copy; BeMyITGuide Inc. All rights reserved.</p>
+</div>
 
 
 
