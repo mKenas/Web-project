@@ -1203,9 +1203,7 @@ only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: por
     .call-img {
         display: none;
     }
-    .intro-section {
-        height: 68vh;
-    }
+
 
     .intro-section h1,
     .intro-section p {
@@ -1329,7 +1327,7 @@ only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: por
 
 
     .intro-section {
-        height: 60vh;
+      height: 68vh;
     }
 
 
@@ -1513,20 +1511,20 @@ input[type=email]{
 }
 
 
-/* Mobile version*/
+/* Mobile version landscape*/
 
-@media screen and (orientation:landscape)
-and (min-device-width: 568px)
-and (max-device-width: 736px) {
+@media only screen
+and (min-width: 568px)
+and (max-width: 736px) and (orientation: landscape) {
 
   .intro-section{
-    height: 100vh;
+    height: 110vh;
   }
   .how-it-works-section{
-        height: 180vh;
+        height: 200vh;
       }
       .how-it-works-section img{
-        width: 60%;
+        width: 55%
       }
 
   .video-container,.Download {
