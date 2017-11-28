@@ -667,7 +667,8 @@ body {
 .intro-section {
     position: relative;
     background-color: #fff;
-    height: 60vh;
+      height: 60vh;
+
     margin-top: 10px;
     overflow: hidden;
     z-index: 200;
@@ -763,7 +764,7 @@ body {
     color: rgba(0, 0, 0, 0);
     width: 60%;
     margin-right: auto;
-    margin-left: 30px;
+    margin-left: 35px;
     font-size: 1.8em;
 }
 
@@ -773,6 +774,7 @@ body {
 .how-it-works-txt-animation {
     animation: how-it-works-fade-in .8s ease-in-out;
     animation-fill-mode: forwards;
+        margin-left: 15px;
 }
 
 @keyframes how-it-works-fade-in {
@@ -898,7 +900,7 @@ body {
     background-color: rgb(35, 102, 144);
     outline: none;
     /*   background-color: rgb(37, 95, 129);*/
-    
+
 }
 
 .video-container video {
@@ -1304,20 +1306,14 @@ only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: por
 
     #replay-icon {
 
-        position: absolute;
-        z-index: 100;
         left: 32%;
         bottom: 4%;
-        display: block;
 
     }
     #play-again-txt {
-        position: absolute;
-        cursor: pointer;
-        z-index: 100;
+
         left: 40%;
         bottom: 1.5%;
-        display: block;
 
     }
 
@@ -1333,8 +1329,9 @@ only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: por
 
 
     .intro-section {
-        height: 80vh;
+        height: 60vh;
     }
+
 
     .intro-section h1 {
         margin-top: 25%;
@@ -1350,33 +1347,14 @@ only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: por
     }
 
 
+    .img-parallax {
 
-}
-
-
-
-
-/* Landscape IPad */
-
-@media only screen and (min-width:: 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-
-
-
-
-    * {
-
-        /*CSS animations*/
-        -webkit-animation: none !important;
-        -moz-animation: none !important;
-        -o-animation: none !important;
-        -ms-animation: none !important;
-        animation: none !important;
+        background-attachment:scroll;
     }
 
-
-
-
 }
+
+
 
 /* Mobile version*/
 
@@ -1428,6 +1406,7 @@ only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: por
 
     .navbar.mobileNavBar a:hover {
 
+
         background-color: rgba(0, 0, 0, 0);
         color: rgba(150, 150, 150, 0.8);
         padding-left: 15px;
@@ -1439,27 +1418,34 @@ only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: por
     }
 
     .intro-section {
-        height: 67vh;
+        height: 110vh;
 
     }
 
+    .how-it-works-section{
+      height: 180vh;
+    }
     .intro-section h1,
     .intro-txt-animation h1 {
         font-size: 1.6em;
-        margin-top: 15%;
+        margin: 15% 3px 0 3px;
+
     }
     .intro-section p,
     .intro-txt-animation p {
         font-size: 1.2em;
-        margin-top: 10%;
+        margin: 10% 3px 0 3px;
     }
-
 
     .how-it-works-text,
     .how-it-works-txt-animation {
         font-size: 1.6em;
         margin-bottom: 60px;
         color: rgba(0, 0, 0, 1);
+    }
+    .save-sharing-txt
+    {
+      margin-right:10px;
     }
     .sharing-txt h1 {
         font-size: 1.8em;
@@ -1475,7 +1461,7 @@ only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: por
     .video-sec {
         width: 100%;
         height: 30%;
-        margin-left: auto;
+        margin-left: 6vw;
         margin-right: auto;
 
 
@@ -1486,8 +1472,12 @@ only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: por
         height: 100%;
         width: 85%;
     }
+    .Download{
+      height: 50vh;
+    }
     .DownloadImages {
         flex-wrap: wrap;
+
     }
 
     #DownloadAndroid {
@@ -1504,5 +1494,97 @@ only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: por
         height: 80px;
 
     }
+
+    .img-parallax {
+
+        background-attachment:scroll;
+    }
+
+    .Abonner form{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+input[type=email]{
+  margin: 15px;
+}
+
+}
+
+
+/* Mobile version*/
+
+@media screen and (orientation:landscape)
+and (min-device-width: 568px)
+and (max-device-width: 736px) {
+
+  .intro-section{
+    height: 100vh;
+  }
+  .how-it-works-section{
+        height: 180vh;
+      }
+      .how-it-works-section img{
+        width: 60%;
+      }
+
+  .video-container,.Download {
+      height: auto;
+
+  }
+
+  .intro-section h1,
+  .intro-txt-animation h1 {
+      font-size: 1.6em;
+      margin-top: 4%;
+  }
+  .intro-section p,
+  .intro-txt-animation p {
+      font-size: 1.2em;
+      margin-top: 2%;
+      margin-bottom: 20px;
+  }
+
+.how-it-works-text,.how-it-works-txt-animation{ font-size: 1.2em;}
+
+  .save-sharing{
+    height:auto;
+  }
+
+  .save-sharing video{
+  height: 90vh;
+  margin-top: 40px;
+  }
+  .sharing-txt p{
+    font-size: 1.3em;
+  }
+  .sharing-txt h1,.save-sharing-txt h1 {
+font-size: 1.2em;
+
+  }
+ .save-sharing-txt p {
+font-size: .7em;
+    margin-bottom: 60px;
+  }
+
+  #replay-icon {
+
+      left: 36%;
+      bottom: -3.5%;
+      display: block;
+      font-size: 1.5em;
+
+  }
+  #play-again-txt {
+
+      left: 40%;
+      bottom: -7%;
+      display: block;
+      font-size: .8em;
+
+  }
+
+
 
 }
