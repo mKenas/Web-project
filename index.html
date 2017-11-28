@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <script src="js/js.js"></script>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://use.fontawesome.com/f891a0aa13.js"></script>
-  <title>Final Project</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script src="js/js.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/f891a0aa13.js"></script>
+    <title>Final Project</title>
 
 
 </head>
 
-  <body >
+<body>
 
+    <a name="home"></a>
 
     <div class="navbar" id="navbar">
 
-      <!--  <li><a  href="#home"><img class="bar-icon" src="media/baricon.svg" alt=""></a></li> -->
-              <a href="#home"><img class="logo" src="media/logo.svg" alt="" id="logoId"></a>
-              <a  href="#home">Home</a>
-              <a  href="#howitworks">How it works</a>
-              <a  href="#feature">Features</a>
-              <a  href="#team">The team</a>
-              <a href="#getitnow">Get it now</a>
-              <a href="javascript:void(0);" class="bar-icon" onclick="navbarMobile()">&#9776;</a>
+        <a href="#home" tabindex="0"><img class="logo" src="media/logo.svg" alt="Logo" id="logoId"></a>
+        <a href="#home" tabindex="1">Home</a>
+        <a href="#intro-section-text" onclick="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" tabindex="2">How it works</a>
+        <a href="#feature" tabindex="3">Features</a>
+        <a href="#team" tabindex="4">The team</a>
+        <a href="#getitnow" tabindex="5">Get it now</a>
+        <a href="javascript:void(0);" class="bar-icon" onclick="navbarMobile()" tabindex="6">&#9776;</a>
 
 
     </div>
@@ -35,210 +34,214 @@
 
 
 
-              <div class="carousel" id="home">
-                <div class="mobile-img">
-               <!-- <img src="media\15.png" alt=""> -->
-
-                </div>
-
-              <div class="container">
-  <div class="css-carousel" id="content">
-    <img class="css-img call-img" src="media\3.png">
-    <img class="css-img find-guide-img" src="media\2.png">
-    <img class="css-img start-page-img" src="media\1.png">
-    <img class="css-img feedback-img" src="media\4.png">
-      <img class="css-img msg-img" src="media\5.png">
-  </div>
-</div>
-
-  </div>
-
-<div class="intro-section" id="intro-section-id" onwheel="fadeIn()">
-  <img src="media/intro-img.jpg" alt="">
-
-    <h1 id="intro-section-h1">Closing the digital gap, one connection at a time. </h1>
-    <p id="intro-section-text">As technology is evolving faster than ever, some people are struggling to keep up.
-Be My It Guide is an app that connects users with technological issues to IT-guides that will aid them in solving them.
-</p>
-
-</div>
-
-<div class="how-it-works-section" id="howitworks">
-<h1>How it works</h1>
-
-  <img src="media/how-it-works.png" alt="How it works image">
-  <div class="How-it-works-text">
-    <p>After You got the app installed on your device and register yourself in very simple way using your device pincode or even your fingerprint. </p>
-
-  </div>
-
-</div>
+    <div class="carousel" id="" onwheel="introFadeIn()">
+        <div class="mobile-img">
 
 
-<div class="feature-section" id="feature">
+        </div>
 
-  <h2> Features</h2>
+        <div class="container">
+            <div class="css-carousel" id="carouselID">
+                <img class="css-img find-guide-img" src="media\call-img.png">
+                <img class="css-img select-language-img" src="media\select-language.png">
+                <img class="css-img start-page-img" src="media\start-page-img.png">
+                <img class="css-img feedback-img" src="media\feedback-img.png">
+                <img class="css-img call-img" src="media\call-img.png">
+            </div>
+        </div>
 
-  <div class="feature-wrapper">
-
-
-
-
-  <div class="feature">
-  <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
-  <i class="fa fa-star fa-2x" aria-hidden="true"></i>
-<h3> Anyone can use it!</h3>
-<p>Registration process is easier than ever! By entering your device PIN code or even your fingerprint we bring your data and make a user for you. </p>
-  </div>
-
-  <div class="feature">
-    <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
-    <i class="fa fa-star fa-2x" aria-hidden="true"></i>
-  <h3> Easy to use</h3>
-
-  </div>
-
-  <div class="feature">
-    <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
-    <i class="fa fa-star fa-2x" aria-hidden="true"></i>
-
-  <h3> Easy to use</h3>
-
-  </div>
-
-  <div class="feature">
-    <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
-    <i class="fa fa-star fa-2x" aria-hidden="true"></i>
-  <h3> Easy to use</h3>
-
-  </div>
     </div>
 
-</div>
+
+
+    <div class="intro-section" id="intro-section-id" onwheel="introFadeIn()" onfocus="introFadeIn()" tabindex="7">
+
+        <div class="img-parallax">
+
+
+            <h1 id="intro-section-h1">Closing the digital gap, one connection at a time. </h1>
+            <p id="intro-section-text">As technology is more involved in our daily life, there is one group that seems to fall behind the rest, the older generation. They didn’t grow up with smart phones, advanced computers and may find it challenging to adapt. Our vision is to close the increasing digital gap between the old and the young. This is important as many aspects of our everyday life is rapidly being digitized* . The post office, bank are all moving towards and adhering to the digital craze. Wanna check your bank balance? You’ve got to have knowledge on how to log in through a complicated system and navigate through the website to do so.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="how-it-works-section" id="howItWorksId" onwheel="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" onfocus="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" tabindex="8">
+        <div class="how-it-works-wrapper">
+            <h1>How it works</h1>
+
+            <img src="media/how-it-works.png" id="howItWorksImgId" alt="How it works image">
+
+
+            <div class="how-it-works-text" id="howItWorksTxtId">
+                <p>By closing this gap, not only do we hope to bring people closer, but also to make everyday life easier for our users. Be my IT guide will be at your service when your loved ones are not there to help you. The user will be able to talk directly to the IT guide, making it easier and faster to solve the problem. Registration/logging into the app will be quick and easy, as the user may use facebook, Face/Touch ID and email </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="feature-section" id="feature" tabindex="9">
+
+        <h2> Features</h2>
+
+        <div class="feature-wrapper">
 
 
 
 
-<div class="video-container" onwheel="replayVideo()">
+            <div class="feature">
+                <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
+                <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+                <h3> Anyone can use it!</h3>
+                <p>Registration process is easier than ever! By entering your device PIN code or even your Face/Touch ID we take care of making new user for you so that you would be one click away from getting the help. </p>
+            </div>
 
-           <video autoplay loop muted>
+            <div class="feature">
+                <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
+                <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+                <h3> Get help in your language!</h3>
+                <p>The app will allow users to select the languages they speak then will connect people who need help with guides who understand their language in order to ensure that the help is on it best level.
+                </p>
+            </div>
+
+            <div class="feature">
+                <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
+                <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+
+                <h3> Chat/video</h3>
+                <p>Having both chat and video sharing allows the user to choose how they want to receive the IT support, thus making the app user-oriented.</p>
+
+            </div>
+
+            <div class="feature">
+                <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
+                <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+                <h3>Evaluation system</h3>
+
+                <p>Our evaluation system allows users to rate the help provided by the IT guide and let the guides leave a feedback about thier experience. This rating will help us to improve the service by connecting people with the guides based on their rating score.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="video-container" onwheel="replayVideo()" tabindex="10">
+
+        <video autoplay loop muted>
                <source src="media\screen-sharing.mp4" type="video/mp4" />
 
            </video>
-           <div >
-               <img src="path to Image" alt="">
-           </div>
-           <!-- If Videos are not supported this image will act as cover image-->
-           <div class="overlay">
+        <div class="overlay">
 
-           </div>
-<div class="sharing-p">
-  <p >Share your screen seamlessly and get a concrete help when ever you want</p>
+        </div>
+        <div class="sharing-txt">
+            <h1>Seamless screen sharing = Easy and concrete help!</h1>
+            <p>To aid the user in the most optimal way, we offer a screen sharing alternative, where the users can share their screen with the IT-guide to get help in a quick and easy way. </p>
 
-</div>
-       </div>
+        </div>
+    </div>
 
 
-       <div class="save-sharing" >
+    <div class="save-sharing" tabindex="11">
 
-         <div class="save-sharing-txt">
-         <p>Sharing your screen is save more than ever.</p>
-           </div>
-       <div class="video-sec">
-
-
-         <video id="save-sharing-video" autoplay  muted onended="showReplayText()">
+        <div class="save-sharing-txt">
+            <h1>It's not just awesome! It's secure!</h1>
+            <p>Securing the privacy of users is our top priority. The screen sharing would not give access to user device, however thanks to our smart video recording feature, it will send a video record of the user screen and restricts the guides’ access to the users personal information. Every user-to-guide interactions will be recorded, to ensure that there may not be security breach.</p>
+        </div>
+        <div class="video-sec">
+            <video id="save-sharing-video" autoplay muted onended="showReplayText()">
              <source src="media\save-sharing.mp4" type="video/mp4" />
              </video>
-             <i class="fa fa-play-circle-o fa-2x" id="replay-icon"></i>
-             <p id="play-again-txt"onclick="replayVideo()">Play again</p>
-             </div>
-       </div>
+            <i class="fa fa-play-circle-o fa-2x" id="replay-icon"></i>
+            <p id="play-again-txt" onclick="replayVideo()">Play again</p>
+        </div>
+    </div>
 
-      <h2> The team</h2>
-       <div class=team id="team">
-         <div class="team-member">
+    <h1> The team</h1>
+    <div class=team id="team" tabindex="12">
+        <div class="team-member">
             <i class="fa fa-user fa-5x"> </i>
             <p>Bezawit Walelegn</p>
-         </div>
-         <div class="team-member">
+        </div>
+        <div class="team-member">
             <i class="fa fa-user fa-5x"> </i>
             <p>Emre Yarar</p>
-         </div>
-         <div class="team-member">
-            <i class="fa fa-user fa-5x"> </i>
+        </div>
+        <div class="team-member">
+          <a href="https://www.linkedin.com/in/mohamad-kenas-1489ab87/" target="_blank">
+            <img  src="media/Team-member-kenas.jpg" alt="Image of team member Mohamad Kenas">  </a>
             <p>Mohamad Kenas</p>
-         </div>
-         <div class="team-member">
-           <i class="fa fa-user fa-5x"> </i>
-           <p>Mohammed Kamal</p>
-         </div>
-         <div class="team-member">
+
+        </div>
+        <div class="team-member">
+            <i class="fa fa-user fa-5x"> </i>
+            <p>Mohammed Kamal</p>
+        </div>
+        <div class="team-member">
             <i class="fa fa-user fa-5x"> </i>
             <p>Maha Shams</p>
 
-         </div>
+        </div>
 
-       </div>
+    </div>
 
-       <div class="Download" id="getitnow">
+    <div class="Download" id="getitnow" tabindex="13">
 
-            <h1 id="DownloadMe">Download Now</h1>
+        <h1 id="DownloadMe">Download Now</h1>
 
-               <div class="DownloadImages">
-                   <a href="https://www.appstore.com" target="_blank">
+        <div class="DownloadImages">
+            <a href="https://www.appstore.com" target="_blank" tabindex="14">
                            <img id="DownloadApple" src="media/Appstore-Badge.svg" alt="Click here to download for Apple">
                        </a>
-                   <a href="https://play.google.com" target="_blank">
+            <a href="https://play.google.com" target="_blank" tabindex="15">
                            <img id="DownloadAndroid" src="media/google-play-badge.png" alt="Click here to download for Android">
                        </a>
-               </div>
-           </div>
-<div class="contact-us">
-  <form class="contact-us-form" action="null" method="post">
-
-
-  </form>
-
-</div>
-
-<div class="FooterTop">
-<h3>Connect with us on social media!</h3>
-<div class="FooterInnhold">
-  <div class="SocialElement">
-      <a class="facebook" href="http://facebook.com/"><img  src="media/facebook.svg"></a>
-      </div>
-      <div class="SocialElement">
-      <a class="twitter" href="http://twitter.com"><img  src="media/twitter.svg"></a>
-      </div>
-      <div class="SocialElement">
-      <a class="instagram" href="http://instagram.com"><img  src="media/instagram.svg"></a>
-      </div>
-      <div class="SocialElement">
-      <a class="linkedin" href="http://linkedin.com"><img  src="media/linkedin.svg"></a>
-</div>
-  </div>
-<div class="FooterEmail">
-  <h3>Subscribe to our newsletter!</h3>
-  <div class="Abonner">
-              <form action="">
-                  <input type="email" name="email" placeholder="Email...">
-                  <button class="Sub-button">Subscribe!</button>
+        </div>
+    </div>
 
 
 
-              </form>
-              </div>
-</div>
+    <div class="FooterTop">
+        <h3>Connect with us on social media!</h3>
+        <div class="FooterInnhold">
+            <div class="SocialElement">
+                <a class="facebook" href="http://facebook.com/" tabindex="16"><img  src="media/facebook.svg"></a>
+            </div>
+            <div class="SocialElement">
+                <a class="twitter" href="http://twitter.com" tabindex="17"><img src="media/twitter.svg"></a>
+            </div>
+            <div class="SocialElement">
+                <a class="instagram" href="http://instagram.com" tabindex="18"><img  src="media/instagram.svg"></a>
+            </div>
+            <div class="SocialElement">
+                <a class="linkedin" href="http://linkedin.com" tabindex="19"><img  src="media/linkedin.svg"></a>
+            </div>
+        </div>
+        <div class="FooterEmail">
+            <h3>Subscribe to our newsletter!</h3>
+            <div class="Abonner">
+                <form action="">
+                    <input type="email" name="email" placeholder="Email..." tabindex="20">
+                    <button class="Sub-button" tabindex="21">Subscribe!</button>
 
-<div class="FooterBottom">
-    <p>Copyright &copy; BeMyITGuide Inc. All rights reserved.</p>
-</div>
+
+
+                </form>
+            </div>
+        </div>
+
+        <div class="FooterBottom">
+            <p>Copyright &copy; BeMyITGuide Inc. All rights reserved.</p>
+        </div>
 
 
 
 
-      </body>
+</body>
 
 
 
