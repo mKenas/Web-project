@@ -25,8 +25,8 @@
         <a href="#home" tabindex="1">Home</a>
         <a href="#intro-section-text" onclick="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" tabindex="2">How it works</a>
         <a href="#feature" tabindex="3">Features</a>
-        <a href="#team" tabindex="4">The team</a>
-        <a href="#getitnow" tabindex="5">Get it now</a>
+        <a href="#team" tabindex="4">The Team</a>
+        <a href="#getitnow" tabindex="5">Download</a>
         <a href="javascript:void(0);" class="bar-icon" onclick="navbarMobile()" tabindex="6">&#9776;</a>
 
 
@@ -43,11 +43,11 @@
 
         <div class="container">
             <div class="css-carousel" id="carouselID">
-                <img class="css-img find-guide-img" src="media\find-guide-img.png">
-                <img class="css-img select-language-img" src="media\select-language.png">
-                <img class="css-img start-page-img" src="media\start-page-img.png">
-                <img class="css-img feedback-img" src="media\feedback-img.png">
-                <img class="css-img call-img" src="media\call-img.png">
+                <img class="css-img find-guide-img" src="media\find-guide-img.png" alt="This image shows the 'find guide' screen from the app.">
+                <img class="css-img select-language-img" src="media\select-language.png" alt="This image shows the 'select language' screen from the app.">
+                <img class="css-img start-page-img" src="media\start-page-img.png" alt="This image shows the 'start page' screen from the app.">
+                <img class="css-img feedback-img" src="media\feedback-img.png" alt="This image shows the'user feedback' screen from the app.">
+                <img class="css-img call-img" src="media\call-img.png" alt="This image shows the 'in-call' screen from the app.">
             </div>
         </div>
 
@@ -55,7 +55,7 @@
 
 
 
-    <div class="intro-section" id="intro-section-id" onmousemove="introFadeIn()" onwheel="introFadeIn()" onfocus="introFadeIn()"on tabindex="7">
+    <div class="intro-section" id="intro-section-id" role="contentinfo" onmousemove="introFadeIn()" onwheel="introFadeIn()" onfocus="introFadeIn()"on tabindex="7">
 
         <div class="img-parallax">
 
@@ -67,9 +67,10 @@
 
     </div>
 
-    <div class="how-it-works-section" id="howItWorksId"onmousemove="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" onwheel="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" onfocus="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" tabindex="8">
+    <div class="how-it-works-section" id="howItWorksId" role="contentinfo" onmousemove="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" onwheel="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" onfocus="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" tabindex="8">
+      <h2>How it works</h2>
         <div class="how-it-works-wrapper">
-            <h1>How it works</h1>
+
 
             <img src="media/how-it-works.png" id="howItWorksImgId" alt="How it works image">
 
@@ -158,11 +159,11 @@
              <source src="media\save-sharing.mp4" type="video/mp4" />
              </video>
             <i class="fa fa-play-circle-o fa-2x" id="replay-icon"></i>
-            <p id="play-again-txt" onclick="replayVideo()">Play again</p>
+            <p id="play-again-txt" onclick="replayVideo()" onkeypress="replayVideo()">Play again</p>
         </div>
     </div>
 
-    <h1> The team</h1>
+    <h2> The Team</h2>
     <div class=team id="team" tabindex="12">
         <div class="team-member">
             <i class="fa fa-user fa-5x"> </i>
@@ -179,7 +180,7 @@
 
         </div>
         <div class="team-member">
-          <a href="https://www.facebook.com/mohammed.kamal.334/" target="_blank">
+          <a href="#s" target="_blank">
             <img  src="media/Team-member-kamal.jpg" alt="Image of team member Mohammed Kamal">  </a>
             <p>Mohammed Kamal</p>
         </div>
@@ -193,7 +194,7 @@
 
     <div class="Download" id="getitnow" tabindex="13">
 
-        <h1 id="DownloadMe">Download Now</h1>
+        <h2 id="DownloadMe">Download Now</h2>
 
         <div class="DownloadImages">
             <a href="https://www.appstore.com" target="_blank" tabindex="14">
@@ -211,16 +212,16 @@
         <h3>Connect with us on social media!</h3>
         <div class="FooterInnhold">
             <div class="SocialElement">
-                <a class="facebook" href="http://facebook.com/" tabindex="16"><img  src="media/facebook.svg"></a>
+                <a class="facebook" href="http://facebook.com/" tabindex="16"><img  src="media/facebook.svg" alt="Click here to open our Facebook page."></a>
             </div>
             <div class="SocialElement">
-                <a class="twitter" href="http://twitter.com" tabindex="17"><img src="media/twitter.svg"></a>
+                <a class="twitter" href="http://twitter.com" tabindex="17"><img src="media/twitter.svg" alt="Click here to open our Twitter page."></a>
             </div>
             <div class="SocialElement">
-                <a class="instagram" href="http://instagram.com" tabindex="18"><img  src="media/instagram.svg"></a>
+                <a class="instagram" href="http://instagram.com" tabindex="18"><img  src="media/instagram.svg" alt="Click here to open our Instagram page."></a>
             </div>
             <div class="SocialElement">
-                <a class="linkedin" href="http://linkedin.com" tabindex="19"><img  src="media/linkedin.svg"></a>
+                <a class="linkedin" href="http://linkedin.com" tabindex="19"><img  src="media/linkedin.svg" alt="Click here to open our Linkedin page."></a>
             </div>
         </div>
         <div class="FooterEmail">
@@ -228,7 +229,7 @@
             <div class="Abonner">
                 <form action="">
                     <input type="email" name="email" placeholder="Email..." tabindex="20">
-                    <button class="Sub-button" tabindex="21">Subscribe!</button>
+                    <button class="Sub-button" type="submit" tabindex="21">Subscribe!</button>
 
 
 
