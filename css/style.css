@@ -137,6 +137,12 @@ h2 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.navbar a:last-child{
+    padding: 10px 0px;
+}
+.navbar a:last-child:hover{
+      padding: 10px 0px;
+}
 
 .carousel {
     margin: 0 auto;
@@ -945,6 +951,9 @@ only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: por
         display: none;
     }
 
+  .intro-section{
+    margin-top: -20px;
+  }
     .intro-section h1,
     .intro-section p {
         color: rgba(255, 255, 255, 1);
@@ -963,7 +972,7 @@ only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: por
     }
     .how-it-works-wrapper {
         flex-direction: column;
-        margin-top: 15vh;
+
     }
 
     .how-it-works-wrapper img,
@@ -1040,14 +1049,9 @@ only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: por
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
 
-  .navbar a.bar-icon {
-        display: block;
-        position: absolute;
-        margin-left: 87vw;
-        font-weight: bold;
-      }
+
 .intro-section {
-      height: 68vh;
+      height: 50vh;
     }
 
 .intro-section h1 {
@@ -1058,7 +1062,7 @@ only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: por
 .intro-section p {
       margin-top: 30%;
       font-size: 1.4em;
-      margin: 0px 20px;
+      margin: 0px 30px;
     }
 
 .how-it-works-section {
@@ -1087,22 +1091,32 @@ body {
 .navbar a.bar-icon {
       display: block;
       position: absolute;
-      margin-left: 87vw;
+      margin-left: 90vw;
       font-weight: bold;
     }
 .navbar {
+
       background-color: rgba(0, 0, 0, 1);
+        overflow: hidden;
+        position: fixed;
+
     }
     .navbar.mobileNavBar {
       flex-direction: column;
       background-color: rgba(0, 0, 0, 1);
+        overflow: hidden;
+        position: fixed;
+
     }
 .navbar.mobileNavBar a.bar-icon {
       margin-left: 87vw;
+        padding: 5px;
+
     }
 
+
 .navbar.mobileNavBar a.bar-icon:hover {
-      padding-right: 20px;
+      padding: 5px;
     }
 .navbar.mobileNavBar a {
       display: block;
@@ -1113,17 +1127,26 @@ body {
       color: rgba(150, 150, 150, 0.8);
       padding-left: 15px;
     }
+
+    .logo {
+        width: 150px;
+        height: 35px;
+        padding: 5px;
+
+
+
+    }
 .intro-section h1,
 .intro-section p {
       color: rgba(256, 256, 256, 1);
     }
 
-.intro-section {
-      height: 110vh;
+.intro-section,.how-it-works-section {
+      height: auto;
     }
 
-.how-it-works-section {
-      height: 180vh;
+    .how-it-works-wrapper img{
+      display: block;
     }
 .intro-section h1,
 .intro-txt-animation h1 {
@@ -1133,7 +1156,7 @@ body {
 .intro-section p,
 .intro-txt-animation p {
       font-size: 1.2em;
-      margin: 10% 10px 0 10px;
+      margin: 10% 10px 20px 10px;
     }
 
 .how-it-works-text,
@@ -1141,7 +1164,7 @@ body {
       text-align: center;
       font-size: 1.6em;
       margin: auto;
-      margin-bottom: 60px;
+      margin-bottom: 30px;
       color: rgba(0, 0, 0, 1);
     }
 
@@ -1224,7 +1247,7 @@ input[type=email] {
 @media only screen and (min-width: 568px) and (max-width: 736px) and (orientation: landscape) {
 
 .intro-section {
-      height: 110vh;
+      height: 90vh;
     }
 .how-it-works-section {
       height: 200vh;
