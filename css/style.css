@@ -51,6 +51,16 @@ body,
     flex-direction: column;
 }
 
+.carousel ,
+.feature-wrapper,
+.save-sharing,
+.team,
+.FooterTop,
+.Download,
+.FooterInnhold
+ {
+  height: auto;
+}
 body {
     top: 0;
     left: 0;
@@ -146,7 +156,6 @@ h2 {
 
 .carousel {
     margin: 0 auto;
-    height: auto;
     background-color: #f7f7f7;
     margin-top: 10vh;
     position: relative;
@@ -505,8 +514,8 @@ h2 {
     height: 60vh;
     margin-top: 10px;
     overflow: hidden;
-    z-index: 200;
     outline: none !important;
+    z-index: 150;
 }
 
 .img-parallax {
@@ -559,6 +568,103 @@ h2 {
         color: rgba(256, 256, 256, 0);
         }
     100% {color: rgba(256, 256, 256, 1);}
+}
+
+button{
+background-color: rgba(0, 0, 0, 0);
+color: #fff;
+border: 2px solid #fff;
+width: 150px;
+height: 40px;
+cursor: pointer;
+transform: translate(42vw, 5vh);
+border-radius: 0px 20px;
+font-size: 1em;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2000; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+
+
+
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    color: #000;
+    position: relative;
+    z-index: 20000;
+
+
+
+}
+.modal-img{
+  height: 150px;
+  border-radius: 20px 20px 0 0;
+  background-image: url('../media/intro-img.jpg');¨
+  background-repeat: no-repeat;
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  margin-top: -20px;
+position: relative;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+
+
+}
+
+.modal-content h1 {
+  color: #fff;
+  position: absolute;
+  top: 2.5%;
+left: 5%
+}
+
+.modal-content p {
+
+  color: #000;
+  margin: 10px 50px;
+  font-size: 1.3em;
+
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  z-index: 300;
+    color: #fff;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+    right: 2%;
+    top: 3%;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .how-it-works-section {
@@ -630,7 +736,6 @@ h2 {
 }
 
 .feature-wrapper {
-    height: auto;
     background-color: #fff;
     margin: 0 0;
     flex-wrap: wrap;
@@ -744,7 +849,6 @@ h2 {
 .save-sharing {
 
     width: 100%;
-    height: auto;
     max-height: 100vh;
     background-color: #E1E1E1;
     outline: none !important;
@@ -774,7 +878,6 @@ h2 {
     background-color: #f7f7f7;
     width: 100%;
     flex-wrap: wrap;
-    height: auto;
     min-height: 45vh;
     margin-bottom: 30px;
     outline: none !important;
@@ -811,7 +914,6 @@ i {
 .Download {
     outline: none !important;
     width: 100%;
-    height: auto;
     padding: 20px 0px;
     background-color: #fff;
 }
@@ -846,13 +948,11 @@ i {
 .FooterTop {
     background-color: #344550;
     flex-wrap: wrap;
-    height: auto;
     width: 100%;
 }
 
 .FooterInnhold {
     width: 100%;
-    height: auto;
     flex-wrap: wrap;
 }
 
@@ -1111,7 +1211,6 @@ body {
 .navbar.mobileNavBar a.bar-icon {
 
         padding: 5px;
-
     }
 
 
@@ -1132,8 +1231,6 @@ body {
         width: 150px;
         height: 35px;
         padding: 5px;
-
-
 
     }
 .intro-section h1,
@@ -1157,6 +1254,23 @@ body {
 .intro-txt-animation p {
       font-size: 1.2em;
       margin: 10% 10px 20px 10px;
+    }
+
+button{
+  transform: translate(30vw, 0vh);
+  margin-bottom: 40px;
+}
+    .modal-content h1 {
+      top: 2%;
+    left: 4%;
+    font-size: 1em;
+    }
+
+    .modal-content p {
+
+      margin: 10px 5px;
+      font-size: .8em;
+
     }
 
 .how-it-works-text,
@@ -1315,5 +1429,22 @@ input[type=email] {
       font-size: .8em;
     }
 
+    button{
+      transform: translate(40vw, 0vh);
+      margin-bottom: 40px;
+    }
+
+
+        .modal-content h1 {
+          top: 5%;
+        left: 4%;
+        font-size: 1.2em;
+        }
+
+        .modal-content p {
+    margin: 5px;
+          font-size: 1em;
+
+        }
 
 }
