@@ -14,20 +14,20 @@
 
 </head>
 
-<body>
+<body id="bodyID">
 
     <a name="home"></a>
 
 
     <div class="navbar" id="navbar">
 
-        <a href="#home" tabindex="0"><img class="logo" src="media/logo.svg" alt="Logo" id="logoId"></a>
-        <a href="#home" tabindex="1">Home</a>
-        <a href="#intro-section-text" onclick="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" tabindex="2">How it works</a>
-        <a href="#feature" tabindex="3">Features</a>
-        <a href="#team" tabindex="4">The Team</a>
-        <a href="#getitnow" tabindex="5">Download</a>
-        <a href="javascript:void(0);" class="bar-icon" onclick="navbarMobile()" tabindex="6">&#9776;</a>
+        <a href="#home" tabindex="1"><img class="logo" src="media/logo.svg" alt="Logo" id="logoId"></a>
+        <a href="#home" tabindex="2">Home</a>
+        <a href="#intro-section-text" onclick="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" tabindex="3">How it works</a>
+        <a href="#feature" tabindex="4">Features</a>
+        <a href="#team" tabindex="5">The Team</a>
+        <a href="#getitnow" tabindex="6">Download</a>
+        <a href="javascript:void(0);" class="bar-icon" onclick="navbarMobile()" tabindex="30">&#9776;</a>
 
 
     </div>
@@ -64,15 +64,15 @@
             </p>
 
 
-            <button class="button read-more-btn" onsubmit="readMore()" onclick="readMore()" onfocus="readMore()">Read more</button>
+            <button class="button read-more-btn" onsubmit="readMore()" onclick="readMore()" onkeypress="readMore()" tabindex="8">Read more</button>
         </div>
 
       </div>
 
-      <!-- The Modal -->
+      <!--  The Read more popout -->
   <div id="myModal" class="modal">
 
-    <!-- Modal content -->
+    <!-- popout content -->
     <div class="modal-content">
       <div class="modal-img">
 
@@ -83,38 +83,38 @@
       <span class="close" onsubmit="CloseContentBtn()" onclick="CloseContentBtn()" onfocus="CloseContentBtn()">&times;</span>
       <h1>The world as a whole is becoming more tech oriented every day</h1>
       <p>
-        The world as we know it is constantly changing and developing, one of the sectors with the fastest development is the tech sector. 
-        Technology that once was groundbreaking has now become obsolete. 
-        Keeping up with technology can easily take its toll on a person, but there is one group of people that has been affected more than others. 
+        The world as we know it is constantly changing and developing, one of the sectors with the fastest development is the tech sector.
+        Technology that once was groundbreaking has now become obsolete.
+        Keeping up with technology can easily take its toll on a person, but there is one group of people that has been affected more than others.
         That group is the senior generation.
-        Nowadays everything happens over the internet, this includes banking and digital mailbox systems.</br>
+        Nowadays everything happens over the internet, this includes banking and digital mailbox systems.</br> </br>
         We've come to the point where you have to have an online presence in order to manage your life.
-        Our vision is to close the digital gap, therefore making sure that everyone can reap the benefits from technological advancement. 
-        Be my IT-Guide introduces video calls as an alternative way to get help with your IT related problems. 
-        By helping you solve your technological problems, one connection at a time, 
-        we make sure that you also get accustomed to the digital age.
+        Our vision is to close the digital gap, therefore making sure that everyone can reap the benefits from technological advancement.
+        Be my IT-Guide introduces video calls as an alternative way to get help with your IT related problems.
+        By helping you solve your technological problems, one connection at a time,
+        we make sure that you also get accustomed to the digital age.</br> </br>
       </p>
 
       <p>
-        A collaboratory survey done by Telenor and the pension fund, shows that half of the Norwegian population, 
+        A collaboratory survey done by Telenor and the pension fund, shows that half of the Norwegian population,
         from the ages of 34-50, are struggling to keep up with technological advancements in society.
-        The percentage only increases with age and many fear a digital divide. 
-        A different survey done by the Telenor shows that 19 percent of the older generation feel like outsiders, 
-        because they don’t use net based banking systems and other official services, 
+        The percentage only increases with age and many fear a digital divide.
+        A different survey done by the Telenor shows that 19 percent of the older generation feel like outsiders,
+        because they don’t use net based banking systems and other official services,
         the same amount even said to have a case of digital anxiety. The older generation thinks that the youngsters spend too much online,
         and fear that this may create a digital division between the generations.
-        <a href="https://www.siste.no/teknologi/innenriks/nyheter/eldre-sliter-med-digital-angst/s/5-47-32498" target="_blank">(Read more here)</a>
+        <a href="https://www.siste.no/teknologi/innenriks/nyheter/eldre-sliter-med-digital-angst/s/5-47-32498" target="_blank">(Read more here)</a></br>
       </p>
-      
+
 
     </div>
 
   </div>
 
 
+    <h2>How it works</h2>
+    <div class="how-it-works-section" id="howItWorksId" role="contentinfo" onmousemove="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" onwheel="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" onfocus="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" tabindex="9">
 
-    <div class="how-it-works-section" id="howItWorksId" role="contentinfo" onmousemove="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" onwheel="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" onfocus="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" tabindex="8">
-        <h2>How it works</h2>
         <div class="how-it-works-wrapper">
 
 
@@ -132,7 +132,7 @@
     </div>
 
 
-    <div class="feature-section" id="feature" tabindex="9">
+    <div class="feature-section" id="feature" tabindex="10">
 
         <h2> Features </h2>
 
@@ -177,7 +177,7 @@
                 <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 <h3>Evaluation system</h3>
-                <p>Our evaluation system allows users to rate the help provided by the IT guide and let the guides leave a feedback about their experience. This rating will help us to improve the service by connecting people with the guides based on their rating score.</p> 
+                <p>Our evaluation system allows users to rate the help provided by the IT guide and let the guides leave a feedback about their experience. This rating will help us to improve the service by connecting people with the guides based on their rating score.</p>
             </div>
 
             <div class="feature">
@@ -215,7 +215,7 @@
 
     </div>
 
-    <div class="video-container" onwheel="replayVideo()" tabindex="10">
+    <div class="video-container" onwheel="replayVideo()" tabindex="11">
 
         <video autoplay loop muted>
 							 <source src="media\screen-sharing.mp4" type="video/mp4" />
@@ -231,7 +231,7 @@
         </div>
     </div>
 
-    <div class="save-sharing" tabindex="11">
+    <div class="save-sharing" tabindex="12">
 
         <div class="save-sharing-txt">
             <h1>It's not just awesome! It's secure!</h1>
@@ -247,28 +247,28 @@
     </div>
 
     <h2> The Team</h2>
-    <div class=team id="team" tabindex="12">
-        <div class="team-member" tabindex="13">
+    <div class=team id="team" tabindex="13">
+        <div class="team-member" tabindex="14">
           <a href="#" target="_blank">
             <img  src="media/Team-member-Bazewit.jpg" alt="Image of team member Bezawit Walelegn"> </a>
             <p>Bezawit Walelegn</p>
         </div>
-        <div class="team-member" tabindex="14">
+        <div class="team-member" tabindex="15">
             <i class="fa fa-user fa-5x"> </i>
             <p>Emre Yarar</p>
         </div>
-        <div class="team-member" tabindex="15">
+        <div class="team-member" tabindex="16">
             <a href="https://www.linkedin.com/in/mohamad-kenas-1489ab87/" target="_blank">
 						<img  src="media/Team-member-kenas.jpg" alt="Image of team member Mohamad Kenas"> </a>
             <p>Mohamad Kenas</p>
 
         </div>
-        <div class="team-member" tabindex="16">
+        <div class="team-member" tabindex="17">
             <a href="#s">
 						<img  src="media/Team-member-kamal.jpg" alt="Image of team member Mohammed Kamal">  </a>
             <p>Mohammed Kamal</p>
         </div>
-        <div class="team-member" tabindex="17">
+        <div class="team-member" tabindex="18">
 
           <a href="https://www.facebook.com/maha.shams19" target="_blank">
           <img  src="media/Team-member-Maha.png" alt="Image of team member Maha Shams"> </a>
@@ -278,15 +278,15 @@
 
     </div>
 
-    <div class="Download" id="getitnow" tabindex="18">
+    <div class="Download" id="getitnow" tabindex="19">
 
         <h2 id="DownloadMe">Download Now</h2>
 
         <div class="DownloadImages">
-            <a href="https://www.appstore.com" target="_blank" tabindex="19">
+            <a href="https://www.appstore.com" target="_blank" tabindex="20">
 													 <img id="DownloadApple" src="media/Appstore-Badge.svg" alt="Click here to download for Apple">
 											 </a>
-            <a href="https://play.google.com" target="_blank" tabindex="20">
+            <a href="https://play.google.com" target="_blank" tabindex="21">
 													 <img id="DownloadAndroid" src="media/google-play-badge.png" alt="Click here to download for Android">
 											 </a>
         </div>
@@ -296,24 +296,24 @@
         <h3>Connect with us on social media!</h3>
         <div class="FooterInnhold">
             <div class="SocialElement">
-                <a class="facebook" href="http://facebook.com/" tabindex="21"><img  src="media/facebook.svg" alt="Click here to open our Facebook page."></a>
+                <a class="facebook" href="http://facebook.com/" tabindex="22"><img  src="media/facebook.svg" alt="Click here to open our Facebook page."></a>
             </div>
             <div class="SocialElement">
-                <a class="twitter" href="http://twitter.com" tabindex="22"><img src="media/twitter.svg" alt="Click here to open our Twitter page."></a>
+                <a class="twitter" href="http://twitter.com" tabindex="23"><img src="media/twitter.svg" alt="Click here to open our Twitter page."></a>
             </div>
             <div class="SocialElement">
-                <a class="instagram" href="http://instagram.com" tabindex="23"><img  src="media/instagram.svg" alt="Click here to open our Instagram page."></a>
+                <a class="instagram" href="http://instagram.com" tabindex="24"><img  src="media/instagram.svg" alt="Click here to open our Instagram page."></a>
             </div>
             <div class="SocialElement">
-                <a class="linkedin" href="http://linkedin.com" tabindex="24"><img  src="media/linkedin.svg" alt="Click here to open our Linkedin page."></a>
+                <a class="linkedin" href="http://linkedin.com" tabindex="25"><img  src="media/linkedin.svg" alt="Click here to open our Linkedin page."></a>
             </div>
         </div>
         <div class="FooterEmail">
             <h3>Subscribe to our newsletter!</h3>
             <div class="Abonner">
                 <form action="">
-                    <input type="email" name="email" placeholder="name@example.com" tabindex="25">
-                    <button class="Sub-button" type="submit" tabindex="26">Subscribe!</button>
+                    <input type="email" name="email" placeholder="name@example.com" tabindex="26">
+                    <button class="Sub-button" type="submit" tabindex="27">Subscribe!</button>
                 </form>
             </div>
         </div>

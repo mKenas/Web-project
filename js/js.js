@@ -62,22 +62,29 @@ function howItWorksImgFadeIn() {
 
 
 // When the user clicks the button, open the modal
+
 function readMore() {
+    var body = document.getElementById('bodyID');
   var modal = document.getElementById('myModal');
     modal.style.display = "block";
+    body.style.overflow= "hidden";
+
 }
 
 
 // When the user clicks on <span> (x), close the modal
  function CloseContentBtn() {
+     var body = document.getElementById('bodyID');
      var modal = document.getElementById('myModal');
     modal.style.display = "none";
+    body.style.overflowX= "hidden";
+    body.style.overflowY= "auto";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     var modal = document.getElementById('myModal');
     if (event.target == modal) {
-        modal.style.display = "none";
+      CloseContentBtn();
     }
 }
