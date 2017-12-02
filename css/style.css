@@ -782,7 +782,7 @@ left: 5%
 
 .feature p {
     font-size: 1.1em;
-    text-align: center;
+    text-align: left;
     margin: 40px 11px 0px;
 
 }
