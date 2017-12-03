@@ -22,7 +22,8 @@ body,
 .DownloadImages,
 .FooterTop,
 .FooterInnhold,
-.FooterEmail {
+.FooterEmail,
+.FooterBottom  {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1175,6 +1176,7 @@ i {
     width: 100%;
     text-align: center;
     justify-content: center;
+    flex-direction: row;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -1183,6 +1185,11 @@ i {
     font-weight: bold;
 }
 
+#rec {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 30px;
+}
 .FooterEmail {
     flex-wrap: wrap;
     padding-bottom: 45px;
