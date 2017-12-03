@@ -1001,7 +1001,7 @@ This would work for firefox and edge: rgb(37, 95, 129);*/
 
 .sharing-txt h1 {
     color: #fff;
-    font-size: 3em;
+    font-size: 2.8em;
     text-align: center;
     margin: 20px;
 }
@@ -1596,6 +1596,13 @@ only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: por
     }
     .feature .fa-star {
         left: 100px;
+    }
+    .FooterBottom {
+      flex-direction: column;
+    }
+    #rec{
+      margin: 0;
+      margin-bottom: 20px;
     }
 
 }
