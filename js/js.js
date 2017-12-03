@@ -1,12 +1,12 @@
 // This function repeat the carousel animation every 27 seconde.
 
 setInterval(function () {
-    var container = document.getElementById('carouselID');
-    var tmp = container.innerHTML;
-    container.innerHTML = tmp;
+    var carousel = document.getElementById('carouselID');
+    var repeat = carousel.innerHTML;
+    carousel.innerHTML = repeat;
 }, 27500);
 
-// This function changes the class name of the navbar to apply the mobile style to navbar.
+// This function changes the class name of the navbar to apply the mobile style to it.
 function navbarMobile() {
     var x = document.getElementById("navbar");
     if (x.className === "navbar") {
@@ -16,7 +16,7 @@ function navbarMobile() {
     }
 }
 
-// This function to replay the save-sharing-video.
+// This function to replay the save sharing video.
 function replayVideo() {
     var icon = document.getElementById("replay-icon");
     var replayText = document.getElementById("play-again-txt");
@@ -55,36 +55,29 @@ function howItWorksImgFadeIn() {
     howItWorksImg.className = "how-it-works-img-animation";
 }
 
-
-
-
-// Get the <span> element that closes the modal
-
-
-// When the user clicks the button, open the modal
+// When the user clicks read more btn it will open the popout.
 
 function readMore() {
     var body = document.getElementById('bodyID');
-  var modal = document.getElementById('myModal');
+    var modal = document.getElementById('myPopout');
     modal.style.display = "block";
-    body.style.overflow= "hidden";
+    body.style.overflow = "hidden";
 
 }
 
-
-// When the user clicks on <span> (x), close the modal
- function CloseContentBtn() {
-     var body = document.getElementById('bodyID');
-     var modal = document.getElementById('myModal');
+// Close the popout when  clicks on x span.
+function CloseContentBtn() {
+    var body = document.getElementById('bodyID');
+    var modal = document.getElementById('myPopout');
     modal.style.display = "none";
-    body.style.overflowX= "hidden";
-    body.style.overflowY= "auto";
+    body.style.overflowX = "hidden";
+    body.style.overflowY = "auto";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    var modal = document.getElementById('myModal');
+// Close the popout when clicks anywhere outside of it.
+window.onclick = function (event) {
+    var modal = document.getElementById('myPopout');
     if (event.target == modal) {
-      CloseContentBtn();
+        CloseContentBtn();
     }
 }

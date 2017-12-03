@@ -3,6 +3,8 @@
     scroll-behavior: smooth;
 }
 
+/* Define flex container */
+
 body,
 .feature-section,
 .carousel,
@@ -26,6 +28,7 @@ body,
     justify-content: center;
 }
 
+
 body,
 .navbar,
 .carousel,
@@ -39,6 +42,8 @@ body,
     width: 100%;
 }
 
+/* Change the diriction of displaying flex elements  */
+
 body,
 .carousel,
 .feature-section,
@@ -51,16 +56,17 @@ body,
     flex-direction: column;
 }
 
-.carousel ,
+.carousel,
 .feature-wrapper,
 .save-sharing,
 .team,
 .FooterTop,
 .Download,
-.FooterInnhold
- {
-  height: auto;
+.FooterInnhold {
+    height: auto;
 }
+
+
 body {
     top: 0;
     left: 0;
@@ -76,6 +82,8 @@ h2 {
     text-align: center;
     font-size: 2em;
 }
+
+/* The navigation bar menu */
 
 .navbar {
     position: fixed;
@@ -101,6 +109,8 @@ h2 {
     background-color: rgba(30, 30, 30, 0.9);
 
 }
+
+/* Hide the phone nabar icon on big screen */
 
 .navbar a.bar-icon {
     display: none;
@@ -147,12 +157,17 @@ h2 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.navbar a:last-child{
+
+.navbar a:last-child {
     padding: 10px 0px;
 }
-.navbar a:last-child:hover{
-      padding: 10px 0px;
+
+.navbar a:last-child:hover {
+    padding: 10px 0px;
 }
+
+
+/* Carousel section */
 
 .carousel {
     margin: 0 auto;
@@ -160,6 +175,8 @@ h2 {
     margin-top: 10vh;
     position: relative;
 }
+
+/*Carousel container */
 
 .container {
     height: 720px;
@@ -171,10 +188,14 @@ h2 {
     display: inline-block;
 }
 
+/* Carousels image*/
+
 .css-carousel img {
     height: 610px;
     width: 375px;
 }
+
+/* Carousels images*/
 
 .find-guide-img,
 .select-language-img,
@@ -187,6 +208,8 @@ h2 {
     margin-top: 40vh;
 }
 
+/* Mobile image bachground in the carousel*/
+
 .mobile-img {
     height: calc(750px - 5vh);
     top: 5vh;
@@ -198,6 +221,7 @@ h2 {
     z-index: 100;
 }
 
+/* Find a guide image animation*/
 
 .find-guide-img {
 
@@ -235,7 +259,7 @@ h2 {
 
 }
 
-/*2-1 */
+/* select-language image animation*/
 
 .select-language-img {
     animation: first-trasn 1s ease-in-out 5s, down-top-margin 1s ease-in-out 5s,
@@ -272,7 +296,7 @@ h2 {
 
 }
 
-/*1-3 */
+/* start-page image animation*/
 
 .start-page-img {
     animation: first-trasn 1s ease-in-out 5s, top-down-margin 1s ease-in-out 5.2s,
@@ -311,7 +335,7 @@ h2 {
 
 }
 
-/* 4*/
+/* Feedback image animation*/
 
 .feedback-img {
     animation: first-trasn 1s ease-in-out 5.3s,
@@ -349,7 +373,7 @@ h2 {
 
 }
 
-/* 5 */
+/* In-call image animation*/
 
 .call-img {
     animation: first-trasn 1s ease-in-out 5.3s, slide-last-first 1s ease-in-out 5.9s,
@@ -385,128 +409,223 @@ h2 {
     -webkit-animation-fill-mode: forwards;
 }
 
-/* Frist trans*/
+/* Frist transition*/
 
 @keyframes first-trasn {
-  99%,100% {transform: translateX(375px);}
-}
-
-@keyframes slide-last-first {
-    0%{transform: translatex(-1875px);}
-    99%,100% {transform: translatex(-1500px); }
-}
-
-@keyframes down-top-margin {
-    100% {margin-top: 13vh;}
-}
-
-@keyframes top-down-margin {
-    100% {margin-top: 40vh;}
-}
-
-/*Sec trans */
-
-@keyframes sec-trasn {
-    0% {transform: translateX(375px);}
-    99%,100% {transform: translateX(750px);}
-}
-
-@keyframes sec-trasn-2 {
-    0% {transform: translateX(-1500px);}
-    99%,100% {transform: translateX(-1125px);}
-}
-
-@keyframes sec-feedback {
-    0% {transform: translateX(-1500px);}
-    99%,100% {transform: translateX(-1125px);}
-}
-
-@keyframes sec-down-top-margin {
-    100% {margin-top: 13vh;}
-}
-
-@keyframes sec-top-down-margin {
-    0% {margin-top: 13vh; }
-    100% {margin-top: 40vh;}
-}
-
-/*third-trasn */
-
-@keyframes third-trasn {
-    0% {transform: translateX(750px);}
     99%,
-    100% {transform: translateX(1125px);}
-}
-
-@keyframes third-trasn-2 {
-    0% {transform: translateX(-1125px);}
-    99%,100% {transform: translateX(-750px);}
-}
-
-@keyframes third-down-top-margin {
-    100% {margin-top: 13vh;}
-}
-
-@keyframes third-top-down-margin {
-    0% {margin-top: 13vh;}
-    100% {margin-top: 40vh;}
-}
-
-@keyframes third-trasn-3 {
-    0% {transform: translateX(-1125px);}
-    99%,100% {transform: translateX(-750px);
+    100% {
+        transform: translateX(375px);
     }
 }
 
-/*forth-trans */
+@keyframes slide-last-first {
+    0% {
+        transform: translatex(-1875px);
+    }
+    99%,
+    100% {
+        transform: translatex(-1500px);
+    }
+}
+
+@keyframes down-top-margin {
+    100% {
+        margin-top: 13vh;
+    }
+}
+
+@keyframes top-down-margin {
+    100% {
+        margin-top: 40vh;
+    }
+}
+
+/*Second transition */
+
+@keyframes sec-trasn {
+    0% {
+        transform: translateX(375px);
+    }
+    99%,
+    100% {
+        transform: translateX(750px);
+    }
+}
+
+@keyframes sec-trasn-2 {
+    0% {
+        transform: translateX(-1500px);
+    }
+    99%,
+    100% {
+        transform: translateX(-1125px);
+    }
+}
+
+@keyframes sec-feedback {
+    0% {
+        transform: translateX(-1500px);
+    }
+    99%,
+    100% {
+        transform: translateX(-1125px);
+    }
+}
+
+@keyframes sec-down-top-margin {
+    100% {
+        margin-top: 13vh;
+    }
+}
+
+@keyframes sec-top-down-margin {
+    0% {
+        margin-top: 13vh;
+    }
+    100% {
+        margin-top: 40vh;
+    }
+}
+
+/*third-transition */
+
+@keyframes third-trasn {
+    0% {
+        transform: translateX(750px);
+    }
+    99%,
+    100% {
+        transform: translateX(1125px);
+    }
+}
+
+@keyframes third-trasn-2 {
+    0% {
+        transform: translateX(-1125px);
+    }
+    99%,
+    100% {
+        transform: translateX(-750px);
+    }
+}
+
+@keyframes third-down-top-margin {
+    100% {
+        margin-top: 13vh;
+    }
+}
+
+@keyframes third-top-down-margin {
+    0% {
+        margin-top: 13vh;
+    }
+    100% {
+        margin-top: 40vh;
+    }
+}
+
+@keyframes third-trasn-3 {
+    0% {
+        transform: translateX(-1125px);
+    }
+    99%,
+    100% {
+        transform: translateX(-750px);
+    }
+}
+
+/*forth-transition */
 
 @keyframes forth-trans {
-    0% {transform: translateX(1125px);}
-    99%,100% {transform: translateX(1500px);  }
+    0% {
+        transform: translateX(1125px);
+    }
+    99%,
+    100% {
+        transform: translateX(1500px);
+    }
 }
 
 @keyframes forth-down-top-margin {
-    0% {margin-top: 40vh;}
-    100% {margin-top: 13vh;}
+    0% {
+        margin-top: 40vh;
+    }
+    100% {
+        margin-top: 13vh;
+    }
 }
 
 @keyframes forth-top-down-margin {
-    0% {margin-top: 13vh;}
-    100% {margin-top: 40vh;}
+    0% {
+        margin-top: 13vh;
+    }
+    100% {
+        margin-top: 40vh;
+    }
 }
 
 @keyframes forth-trans-2 {
-    0% {transform: translateX(-750px);}
-    99%,100% {transform: translateX(-375px);}
+    0% {
+        transform: translateX(-750px);
+    }
+    99%,
+    100% {
+        transform: translateX(-375px);
+    }
 }
 
-/* fifth-trans*/
+/* fifth-transition*/
 
 @keyframes fifth-trans {
-    0% {transform: translateX(1500px);}
-    99%,100% {
-        transform: translateX(1875px);}
+    0% {
+        transform: translateX(1500px);
+    }
+    99%,
+    100% {
+        transform: translateX(1875px);
+    }
 }
 
 @keyframes fifth-trans-2 {
-    0% {transform: translateX(-375px);}
-    99%,100% {transform: translateX(0px);}
+    0% {
+        transform: translateX(-375px);
+    }
+    99%,
+    100% {
+        transform: translateX(0px);
+    }
 }
 
 @keyframes slide-last-first-5 {
-    0% {transform: translatex(-375px);}
-    99%,100% {transform: translatex(0px);}
+    0% {
+        transform: translatex(-375px);
+    }
+    99%,
+    100% {
+        transform: translatex(0px);
+    }
 }
 
 @keyframes fifth-down-top-margin {
-    0% {margin-top: 40vh;}
-    100% {margin-top: 13vh;}
+    0% {
+        margin-top: 40vh;
+    }
+    100% {
+        margin-top: 13vh;
+    }
 }
 
 @keyframes fifth-top-down-margin {
-    0% {margin-top: 13vh;}
-    100% {margin-top: 40vh;}
+    0% {
+        margin-top: 13vh;
+    }
+    100% {
+        margin-top: 40vh;
+    }
 }
+
+
+/* The introduction */
 
 .intro-section {
     position: relative;
@@ -517,6 +636,8 @@ h2 {
     outline: none !important;
     z-index: 150;
 }
+
+/* parallax effect for background image*/
 
 .img-parallax {
     background-image: url('../media/intro-img.jpg');
@@ -536,60 +657,67 @@ h2 {
 
 
 .intro-section h1 {
-  /*  font-size: 2.3em;
-  */
-  font-size: 4vw;
+    font-size: 4vw;
     margin-top: 5%;
     margin-bottom: 4%;
 }
 
 .intro-section p {
-  /*
-    font-size: 1.5em;
-
-    */
     font-size: 2vw;
     margin: 0px 30px;
 }
+
+/* This defines h1 animation */
 
 .intro-h1-animation {
     animation: intro-h1-fade-in .8s ease-in-out;
     animation-fill-mode: forwards;
 }
 
+@keyframes intro-h1-fade-in {
+    0% {
+        margin-right: 30px;
+        color: rgba(256, 256, 256, 0);
+    }
+    100% {
+        color: rgba(256, 256, 256, 1);
+    }
+}
+
+/* This defines text animation */
+
 .intro-txt-animation {
     animation: intro-txt-fade-in-up .8s ease-in-out .5s;
     animation-fill-mode: forwards;
 }
 
-@keyframes intro-h1-fade-in {
-    0% {margin-right: 30px;
-        color: rgba(256, 256, 256, 0);
-        }
-    100% {color: rgba(256, 256, 256, 1);}
-}
-
 @keyframes intro-txt-fade-in-up {
-    0% {transform: translateY(30px);
+    0% {
+        transform: translateY(30px);
         color: rgba(256, 256, 256, 0);
-        }
-    100% {color: rgba(256, 256, 256, 1);}
+    }
+    100% {
+        color: rgba(256, 256, 256, 1);
+    }
 }
 
-.read-more-btn{
-background-color: rgba(0, 0, 0, 0);
-color: #fff;
-border: 2px solid #fff;
-width: 150px;
-height: 40px;
-cursor: pointer;
-transform: translate(45vw, 5vh);
-border-radius: 0px 20px;
-font-size: 1em;
+/* read more button */
+
+.read-more-btn {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border: 2px solid #fff;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    transform: translate(45vw, 5vh);
+    border-radius: 0px 20px;
+    font-size: 1em;
 }
 
-/* The Read more popout background */
-.modal {
+/* The Read more popout sectoion */
+
+.popout-section {
     display: none;
     position: fixed;
     z-index: 2000;
@@ -599,14 +727,15 @@ font-size: 1em;
     width: 100%;
     height: 100%;
     overflow: scroll;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
 
 
 }
 
-/* Modal Content */
-.modal-content {
+/* Popout Content */
+
+.popout-content {
     background-color: #fff;
     margin: auto;
     padding: 20px;
@@ -620,43 +749,47 @@ font-size: 1em;
     box-shadow: 0px 3px 30px rgb(50, 50, 50);
 
 }
-.modal-img{
-  height: 150px;
-  border-radius: 20px 20px 0 0;
-  background-image: url('../media/intro-img.jpg');¨
-  background-repeat: no-repeat;
-  width: calc(100% + 40px);
-  margin-left: -20px;
-  margin-top: -20px;
-position: relative;
-  background-position: center;
-  background-size: cover;
-  position: relative;
+
+/* Popout Content header background image */
+
+.popout-img {
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+    background-image: url('../media/intro-img.jpg');
+    ¨ background-repeat: no-repeat;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-top: -20px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 
 
 
 }
 
-.modal-content h1 {
-  color: #fff;
-  position: absolute;
-  top: 4%;
-left: 5%
+.popout-content h1 {
+    color: #fff;
+    position: absolute;
+    top: 4%;
+    left: 5%
 }
 
-.modal-content p {
+.popout-content p {
 
-  color: #000;
-  margin: 25px 50px;
-  font-size: 1.3em;
-  line-height: 30px;
+    color: #000;
+    margin: 25px 50px;
+    font-size: 1.3em;
+    line-height: 30px;
 
 }
 
-/* The Close Button */
+/* The Close Button for the popout section */
+
 .close {
-  position: absolute;
-  z-index: 300;
+    position: absolute;
+    z-index: 300;
     color: #fff;
     float: right;
     font-size: 60px;
@@ -667,7 +800,7 @@ left: 5%
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: #101010;
     text-decoration: none;
     cursor: pointer;
 }
@@ -678,6 +811,8 @@ left: 5%
     height: 60vh;
     outline: none !important;
 }
+
+/* How it works section */
 
 .how-it-works-section img {
     top: 25px;
@@ -703,6 +838,8 @@ left: 5%
     margin-right: 30px;
 }
 
+/* How it works text animation */
+
 .how-it-works-txt-animation p {
     margin-right: 30px;
 }
@@ -714,14 +851,18 @@ left: 5%
 }
 
 @keyframes how-it-works-fade-in {
-    0% {margin-left: 20px;
+    0% {
+        margin-left: 20px;
         font-size: 1.6em;
         color: rgba(0, 0, 0, 0);
-        }
-    100% {color: rgba(0, 0, 0, 1);
+    }
+    100% {
+        color: rgba(0, 0, 0, 1);
         font-size: 1.6em;
-      }
+    }
 }
+
+/* How it works image animation */
 
 .how-it-works-img-animation {
     animation: how-it-works-img-fade-in .8s ease-in-out;
@@ -729,10 +870,16 @@ left: 5%
 }
 
 @keyframes how-it-works-img-fade-in {
-    0% {transform: translateX(-30px);
-        opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
+
+/* Features section */
 
 .feature-section {
     outline: none !important;
@@ -746,6 +893,7 @@ left: 5%
     flex-wrap: wrap;
 }
 
+/* Feature div */
 
 .feature {
     position: relative;
@@ -757,6 +905,8 @@ left: 5%
     margin: 30px 30px;
 }
 
+/* Feature circle icon */
+
 .feature .fa-circle {
     color: #766DFF;
     left: 40%;
@@ -764,6 +914,8 @@ left: 5%
     position: absolute;
     z-index: 10;
 }
+
+/* Feature star icon */
 
 .feature .fa-star {
     color: #FFFF8C;
@@ -773,35 +925,25 @@ left: 5%
     z-index: 15;
 }
 
+/* Feature header */
+
 .feature h3 {
     margin-top: 50px;
     text-align: center;
     color: #37c2a3;
 }
 
+/* Feature text */
+
 .feature p {
     font-size: 1.1em;
     text-align: left;
     margin: 40px 11px 0px;
+    text-align: center;
 
 }
 
-#replay-icon {
-
-    position: absolute;
-    z-index: 100;
-    left: 38.5%;
-    bottom: 3%;
-    display: none;
-}
-#play-again-txt {
-    position: absolute;
-    cursor: pointer;
-    z-index: 100;
-    left: 46.5%;
-    bottom: 1.5%;
-    display: none;
-}
+/* Screen sharing section */
 
 .video-container {
     width: 100%;
@@ -809,10 +951,18 @@ left: 5%
     position: relative;
     margin: 0px 0px;
     padding: 0px;
-    background-color: rgb(35, 102, 144);
     outline: none;
-    /*   background-color: rgb(37, 95, 129);*/
+    /*
+  Here background color rended differently on different browsers
+
+This would work for firefox and edge: rgb(37, 95, 129);*/
+    background-color: rgb(35, 102, 144);
+
+
+
 }
+
+/* Screen sharing video */
 
 .video-container video {
     margin-left: auto;
@@ -821,6 +971,8 @@ left: 5%
     height: 90%;
 }
 
+/* Screen sharing video overlay */
+
 .overlay {
     z-index: 100;
     position: absolute;
@@ -828,6 +980,8 @@ left: 5%
     background-color: rgba(10, 10, 10, .7);
     height: 100%;
 }
+
+/* Screen sharing text */
 
 .sharing-txt {
     z-index: 200;
@@ -851,6 +1005,8 @@ left: 5%
     margin: 20px;
 }
 
+/* Screen sharing section */
+
 .save-sharing {
 
     width: 100%;
@@ -858,6 +1014,8 @@ left: 5%
     background-color: #E1E1E1;
     outline: none !important;
 }
+
+/* save sharing video */
 
 .video-sec {
     position: relative;
@@ -869,15 +1027,44 @@ left: 5%
     height: 100%;
 }
 
+/* Screen sharing header */
+
 .save-sharing-txt h1 {
     font-size: 1.8em;
 }
+
+/* Screen sharing text */
+
 .save-sharing-txt {
     flex-grow: 1;
     margin-right: auto;
     font-size: 1.6em;
     margin-left: 30px;
 }
+
+/* Replay icon for save-sharing video */
+
+#replay-icon {
+
+    position: absolute;
+    z-index: 100;
+    left: 38.5%;
+    bottom: 3%;
+    display: none;
+}
+
+/* Replay text for save-sharing video */
+
+#play-again-txt {
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    left: 46.5%;
+    bottom: 1.5%;
+    display: none;
+}
+
+/*  The team section */
 
 .team {
     background-color: #f7f7f7;
@@ -888,6 +1075,7 @@ left: 5%
     outline: none !important;
 }
 
+/* Team member */
 
 .team-member {
     position: relative;
@@ -899,6 +1087,8 @@ left: 5%
     box-shadow: 0px 40px 50px rgba(200, 200, 200, 0.8);
 }
 
+/* Team member  image*/
+
 .team-member img {
     width: 240px;
     height: 240px;
@@ -906,16 +1096,24 @@ left: 5%
     text-align: center;
 }
 
+/*  one eam member icon  */
+
 i {
     color: #c2c2c2;
 }
+
+/* Team member text */
 
 .team p {
     position: absolute;
     bottom: -70px;
     font-size: 1.2em;
     margin-bottom: 30px;
+    font-weight: bold;
 }
+
+/* Download section */
+
 .Download {
     outline: none !important;
     width: 100%;
@@ -927,6 +1125,7 @@ i {
     width: 100%;
     margin: auto;
 }
+
 #DownloadMe {
     text-align: center;
     font-size: 2em;
@@ -960,7 +1159,6 @@ i {
     width: 100%;
     flex-wrap: wrap;
 }
-
 
 .FooterInnhold img {
     height: 75px;
@@ -1030,13 +1228,13 @@ input[type=email] {
     border-radius: 5px;
 }
 
-/* Mobile and ipad version */
+/* Shared changed between mobile and ipad  */
 
 @media (max-width:768px),
 only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
 
     * {
-        /*CSS animations*/
+        /* Deactivate CSS animations*/
         -webkit-animation: none !important;
         -moz-animation: none !important;
         -o-animation: none !important;
@@ -1044,6 +1242,7 @@ only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: por
         animation: none !important;
     }
 
+    /* Hide the carousel*/
     .carousel,
     .container,
     .css-carousel,
@@ -1056,9 +1255,9 @@ only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: por
         display: none;
     }
 
-  .intro-section{
-    margin-top: -25px;
-  }
+    .intro-section {
+        margin-top: -25px;
+    }
     .intro-section h1,
     .intro-section p {
         color: rgba(255, 255, 255, 1);
@@ -1079,7 +1278,7 @@ only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: por
         flex-direction: column;
 
     }
-
+    /* rest the how it works text to remove the animation*/
     .how-it-works-wrapper img,
     .how-it-works-text {
         margin-left: auto;
@@ -1102,8 +1301,6 @@ only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: por
         font-size: 1.6em;
         margin: 0 30px 20px 20px;
     }
-
-
 
     .save-sharing {
         max-height: 200vh;
@@ -1150,86 +1347,88 @@ only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: por
 }
 
 
-/* Portrait IPad */
+/* Portrait IPad  style*/
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
 
 
-.intro-section {
-      height: 50vh;
+    .intro-section {
+        height: 60vh;
     }
 
-.intro-section h1 {
-      margin-top: 25%;
-      font-size: 1.7em;
+    .intro-section h1 {
+        margin-top: 25%;
+        font-size: 1.7em;
     }
 
-.intro-section p {
-      margin-top: 30%;
-      font-size: 1.4em;
-      margin: 0px 30px;
+    .intro-section p {
+        margin-top: 30%;
+        font-size: 1.4em;
+        margin: 0px 30px;
     }
 
-.how-it-works-section {
-      height: auto;
+    .how-it-works-section {
+        height: auto;
     }
-.img-parallax {
-      background-attachment: scroll;
+    .img-parallax {
+        background-attachment: scroll;
     }
 
+    .read-more-btn {
+        transform: translate(40vw, 5vh);
+    }
 
 }
 
-/* Mobile version*/
+/* Mobile style*/
 
 @media only screen and (max-width:768px) {
 
-body {
-      margin-top: 70px;
+    body {
+        margin-top: 70px;
     }
 
-
-.navbar :not(:first-child) {
-      display: none;
+    .navbar :not(:first-child) {
+        display: none;
 
     }
-.navbar a.bar-icon {
-      display: block;
-      position: absolute;
-      margin-left: 90vw;
-      font-weight: bold;
+    .navbar a.bar-icon {
+        display: block;
+        position: absolute;
+        margin-left: 90vw;
+        font-weight: bold;
     }
-.navbar {
+    .navbar {
 
-      background-color: rgba(0, 0, 0, 1);
+        background-color: rgba(0, 0, 0, 1);
         overflow: hidden;
         position: fixed;
 
     }
     .navbar.mobileNavBar {
-      flex-direction: column;
-      background-color: rgba(0, 0, 0, 1);
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 1);
         overflow: hidden;
         position: fixed;
 
     }
-.navbar.mobileNavBar a.bar-icon {
+    .navbar.mobileNavBar a.bar-icon {
 
         padding: 5px;
     }
 
 
-.navbar.mobileNavBar a.bar-icon:hover {
-      padding: 5px;
+    .navbar.mobileNavBar a.bar-icon:hover {
+        padding: 5px;
     }
-.navbar.mobileNavBar a {
-      display: block;
+    .navbar.mobileNavBar a {
+        display: block;
     }
 
-.navbar.mobileNavBar a:hover {
-      background-color: rgba(0, 0, 0, 0);
-      color: rgba(150, 150, 150, 0.8);
-      padding-left: 15px;
+    .navbar.mobileNavBar a:hover {
+        background-color: rgba(0, 0, 0, 0);
+        color: rgba(150, 150, 150, 0.8);
+        padding-left: 15px;
     }
 
     .logo {
@@ -1238,268 +1437,271 @@ body {
         padding: 5px;
 
     }
-.intro-section h1,
-.intro-section p {
-      color: rgba(256, 256, 256, 1);
+    .intro-section h1,
+    .intro-section p {
+        color: rgba(256, 256, 256, 1);
     }
 
-.intro-section,.how-it-works-section {
-      height: auto;
+    .intro-section,
+    .how-it-works-section {
+        height: auto;
     }
 
-    .how-it-works-wrapper img{
-      display: block;
+    .how-it-works-wrapper img {
+        display: block;
     }
-.intro-section h1,
-.intro-txt-animation h1 {
-      font-size: 1.6em;
-      margin: 15% 3px 0 3px;
+    .intro-section h1,
+    .intro-txt-animation h1 {
+        font-size: 1.6em;
+        margin: 15% 3px 0 3px;
     }
-.intro-section p,
-.intro-txt-animation p {
-      font-size: 1.2em;
-      margin: 10% 10px 20px 10px;
-    }
-
-.read-more-btn{
-  transform: translate(30vw, 0vh);
-  margin-bottom: 40px;
-}
-
-
-    .modal-content h1 {
-      top: 2%;
-    left: 4%;
-    font-size: 1em;
+    .intro-section p,
+    .intro-txt-animation p {
+        font-size: 1.2em;
+        margin: 10% 10px 20px 10px;
     }
 
-    .modal-content p {
-
-      margin: 10px 5px;
-      font-size: .8em;
-
-    }
-
-.how-it-works-text,
-.how-it-works-txt-animation {
-      text-align: center;
-      font-size: 1.6em;
-      margin: auto;
-      margin-bottom: 30px;
-      color: rgba(0, 0, 0, 1);
-    }
-
-.how-it-works-text p,
-.how-it-works-txt-animation p {
-      margin: auto;
-    }
-
-.video-container {
-      height: 90vh;
-    }
-
-.sharing-txt h1 {
-    margin: 0 auto;
-    }
-.save-sharing-txt {
-      margin-right: 10px;
-    }
-.sharing-txt h1 {
-      font-size: 1.8em;
-      margin-right: 20px;
-      margin-left: 20px;
-    }
-.sharing-txt p {
-      font-size: 1.4em;
-      margin-right: 20px;
-      margin-left: 20px;
-    }
-
-.video-sec {
-      width: 100%;
-      height: 30%;
-      margin-left: 6vw;
-      margin-right: auto;
-    }
-
-.video-sec video {
-      height: 100%;
-      width: 85%;
-    }
-
-.Download {
-      height: auto;
-    }
-
-.DownloadImages {
-      flex-wrap: wrap;
-    }
-
-#DownloadAndroid {
-      width: 240px;
-      height: 100px;
-    }
-
-#DownloadApple {
-      width: 210px;
-      height: 80px;
-    }
-
-.img-parallax {
-      background-attachment: scroll;
-    }
-
-.Abonner form {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-
-input[type=email] {
-      margin: 15px;
+    .read-more-btn {
+        transform: translate(30vw, 0vh);
+        margin-bottom: 40px;
     }
 
 
-  .modal-content {
-    width: 75%;
-  margin-right: 20px;
-  margin-left:  20px;
-    margin-bottom: 150px;
-  }
-    .modal-content p {
-      margin: 5px;
-      font-size: 1em;
-      line-height: 24px;
-
+    .popout-content h1 {
+        top: 2%;
+        left: 4%;
+        font-size: 1em;
     }
-    .close{
-      top: -5px;
-      font-size: 2.2em;
+
+    .popout-content p {
+
+        margin: 10px 5px;
+        font-size: .8em;
 
     }
 
-    .feature{
-      width: 220px;
-    height: 250px;
+    .how-it-works-text,
+    .how-it-works-txt-animation {
+        text-align: center;
+        font-size: 1.6em;
+        margin: auto;
+        margin-bottom: 30px;
+        color: rgba(0, 0, 0, 1);
     }
-      .feature p {
+
+    .how-it-works-text p,
+    .how-it-works-txt-animation p {
+        margin: auto;
+    }
+
+    .video-container {
+        height: 90vh;
+    }
+
+    .sharing-txt h1 {
+        margin: 0 auto;
+    }
+    .save-sharing-txt {
+        margin-right: 10px;
+    }
+    .sharing-txt h1 {
+        font-size: 1.8em;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .sharing-txt p {
+        font-size: 1.4em;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .video-sec {
+        width: 100%;
+        height: 30%;
+        margin-left: 6vw;
+        margin-right: auto;
+    }
+
+    .video-sec video {
+        height: 100%;
+        width: 85%;
+    }
+
+    .Download {
+        height: auto;
+    }
+
+    .DownloadImages {
+        flex-wrap: wrap;
+    }
+
+    #DownloadAndroid {
+        width: 240px;
+        height: 100px;
+    }
+
+    #DownloadApple {
+        width: 210px;
+        height: 80px;
+    }
+
+    .img-parallax {
+        background-attachment: scroll;
+    }
+
+    .Abonner form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    input[type=email] {
+        margin: 15px;
+    }
+
+
+    .popout-content {
+        width: 75%;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 150px;
+    }
+    .popout-content p {
+        margin: 5px;
+        font-size: 1em;
+        line-height: 24px;
+
+    }
+    .close {
+        top: -5px;
+        font-size: 2.2em;
+
+    }
+
+    .feature {
+        width: 220px;
+        height: 250px;
+    }
+    .feature p {
         margin-top: 0px;
         font-size: .8em;
-      }
-      .feature .fa-star  {
+    }
+    .feature .fa-star {
         left: 100px;
-      }
+    }
 
 }
 
 
-/* Mobile version landscape*/
+/* Mobile landscape style*/
 
 @media only screen and (min-width: 568px) and (max-width: 736px) and (orientation: landscape) {
 
 
-.how-it-works-section img {
-      width: 55%
+    .how-it-works-section img {
+        width: 55%
     }
 
-.intro-section ,.how-it-works-section,.video-container,
-.Download {
-      height: auto;
+    .intro-section,
+    .how-it-works-section,
+    .video-container,
+    .Download {
+        height: auto;
     }
 
-.intro-section h1,
-.intro-txt-animation h1 {
-      font-size: 1.6em;
-      margin-top: 4%;
+    .intro-section h1,
+    .intro-txt-animation h1 {
+        font-size: 1.6em;
+        margin-top: 4%;
     }
-.intro-section p,
-.intro-txt-animation p {
-      font-size: 1.2em;
-      margin-top: 2%;
-      margin-bottom: 20px;
-    }
-
-.how-it-works-text,
-.how-it-works-txt-animation {
-      font-size: 1.2em;
+    .intro-section p,
+    .intro-txt-animation p {
+        font-size: 1.2em;
+        margin-top: 2%;
+        margin-bottom: 20px;
     }
 
-.save-sharing {
-      height: auto;
+    .how-it-works-text,
+    .how-it-works-txt-animation {
+        font-size: 1.2em;
     }
 
-.save-sharing video {
-      height: 90vh;
-      margin-top: 40px;
+    .save-sharing {
+        height: auto;
     }
 
-.sharing-txt p {
-      font-size: 1.3em;
+    .save-sharing video {
+        height: 90vh;
+        margin-top: 40px;
     }
 
-.sharing-txt h1,
-.save-sharing-txt h1 {
-      font-size: 1.2em;
+    .sharing-txt p {
+        font-size: 1.3em;
     }
 
-.save-sharing-txt p {
-      font-size: .7em;
-      margin-bottom: 60px;
+    .sharing-txt h1,
+    .save-sharing-txt h1 {
+        font-size: 1.2em;
     }
 
-#replay-icon {
-      left: 36%;
-      bottom: -3.5%;
-      display: block;
-      font-size: 1.5em;
+    .save-sharing-txt p {
+        font-size: .7em;
+        margin-bottom: 60px;
     }
 
-#play-again-txt {
-      left: 40%;
-      bottom: -7%;
-      display: block;
-      font-size: .8em;
+    #replay-icon {
+        left: 36%;
+        bottom: -3.5%;
+        display: block;
+        font-size: 1.5em;
     }
 
-    .read-more-btn{
-      transform: translate(38vw, 0vh);
-      margin-bottom: 40px;
+    #play-again-txt {
+        left: 40%;
+        bottom: -7%;
+        display: block;
+        font-size: .8em;
     }
 
-.modal-content{
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 150px;
-}
-        .modal-content h1 {
-          top: 5%;
+    .read-more-btn {
+        transform: translate(38vw, 0vh);
+        margin-bottom: 40px;
+    }
+
+    .popout-content {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 150px;
+    }
+    .popout-content h1 {
+        top: 5%;
         left: 4%;
         font-size: 1.2em;
-        }
+    }
 
-        .modal-content p {
-    margin: 5px;
-          font-size: 1em;
-          line-height: 24px;
+    .popout-content p {
+        margin: 5px;
+        font-size: 1em;
+        line-height: 24px;
 
-        }
+    }
 
-        .feature{
-          width: 220px;
+    .feature {
+        width: 220px;
         height: 250px;
-        }
-          .feature p {
-            margin-top: 0px;
-            font-size: .8em;
-          }
-          .feature .fa-star  {
-            left: 100px;
-          }
+    }
+    .feature p {
+        margin-top: 0px;
+        font-size: .8em;
+    }
+    .feature .fa-star {
+        left: 100px;
+    }
 
-.close{
-  right: 10px;
-  top: -10px;
-}
+    .close {
+        right: 10px;
+        top: -10px;
+    }
 
 }

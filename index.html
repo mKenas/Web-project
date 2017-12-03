@@ -15,10 +15,8 @@
 </head>
 
 <body id="bodyID">
-
+    <!--  Navigation bar menu -->
     <a name="home"></a>
-
-
     <div class="navbar" id="navbar">
 
         <a href="#home" tabindex="1"><img class="logo" src="media/logo.svg" alt="Logo" id="logoId"></a>
@@ -28,13 +26,10 @@
         <a href="#team" tabindex="5">The Team</a>
         <a href="#getitnow" tabindex="6">Download</a>
         <a href="javascript:void(0);" class="bar-icon" onclick="navbarMobile()" tabindex="30">&#9776;</a>
-
-
     </div>
-
+  <!--  The carousel section -->
     <div class="carousel" id="" onwheel="introFadeIn()" onscroll="introFadeIn()">
         <div class="mobile-img">
-
 
         </div>
 
@@ -47,93 +42,61 @@
                 <img class="css-img call-img" src="media\call-img.png" alt="This image shows the 'in-call' screen from the app.">
             </div>
         </div>
-
     </div>
 
-
-    <div class="intro-section" id="intro-section-id" role="contentinfo" onmousemove="introFadeIn()" onwheel="introFadeIn()" onfocus="introFadeIn()" on tabindex="7">
+  <!--  The introduction section -->
+    <div class="intro-section" id="intro-section-id" role="contentinfo" onmousemove="introFadeIn()" onwheel="introFadeIn()" onfocus="introFadeIn()" tabindex="7">
 
         <div class="img-parallax">
 
-
-
-
             <h1 id="intro-section-h1">Closing the digital gap, one connection at a time. </h1>
-            <p id="intro-section-text"> As technology is evolving faster than ever, the senior generation is struggling to keep up. </br>
-                Be My It Guide is an app that connects users with technological issues to IT-guides that will aid them in solving them.
+            <p id="intro-section-text"> As technology is evolving faster than ever, the older generation is struggling to keep up. </br>
+                Be my IT-guide is an app that connects users with technological issues to IT-guides. The IT-guides will aid the elders in solving their tech problems.
             </p>
-
 
             <button class="button read-more-btn" onsubmit="readMore()" onclick="readMore()" onkeypress="readMore()" tabindex="8">Read more</button>
         </div>
 
-      </div>
-
-      <!--  The Read more popout -->
-  <div id="myModal" class="modal">
-
-    <!-- popout content -->
-    <div class="modal-content">
-      <div class="modal-img">
-
-      </div>
-
-
-
-      <span class="close" onsubmit="CloseContentBtn()" onclick="CloseContentBtn()" onfocus="CloseContentBtn()">&times;</span>
-      <h1>The world as a whole is becoming more tech oriented every day</h1>
-      <p>
-        The world as we know it is constantly changing and developing, one of the sectors with the fastest development is the tech sector. 
-        Technology that once was groundbreaking has now become obsolete. 
-        Keeping up with technology can easily take its toll on a person, but there is one group of people who have been affected more than others. 
-        That group is the senior generation.
-        Nowadays everything happens over the internet, this includes banking and digital mailbox systems.</br>
-        We've come to the point where you must have an online presence in order to manage your life.
-        Our vision is to close the digital gap, therefore making sure that everyone can reap the benefits of technological advancement. 
-        Be my IT-Guide introduces video calls as an alternative way to get help with your IT related problems. 
-        By helping you solve your technological problems, one connection at a time, 
-        we make sure that you also get accustomed to the digital age.
-      </p>
-
-      <p>
-        A collaboratory survey done by Telenor and the pension fund shows that half of the Norwegian population, 
-        from the ages of 34-50, are struggling to keep up with technological advancements in society.
-        The percentage only increases with age and many fear a digital divide. 
-        A different survey done by the Telenor shows that 19 percent of the older generation feel like outsiders 
-        because they don’t use net-based banking systems and other official services, 
-        the same amount even said to have a case of digital anxiety. The older generation thinks that the youngsters spend too much online,
-        and fear that this may create a digital divide between the generations.
-        <a href="https://www.siste.no/teknologi/innenriks/nyheter/eldre-sliter-med-digital-angst/s/5-47-32498" target="_blank">(Read more here)</a>
-      </p>
-
-
     </div>
 
-  </div>
+    <!--  The Read more popout -->
+    <div class="popout-section" id="myPopout">
 
+        <!-- popout content -->
+        <div class="popout-content">
+            <!-- Header background image -->
+            <div class="popout-img"></div>
+            <span class="close" onsubmit="CloseContentBtn()" onclick="CloseContentBtn()" onkeypress="CloseContentBtn()" role="button">&times;</span>
+            <h1>The world as a whole is becoming more tech oriented every day</h1>
+            <p>The world as we know it is constantly changing and developing. The tech sector is the fastest developing sector. Technology that once was groundbreaking has now become obsolete. Keeping up with technology can easily take its toll on a person, but there is one group that got affected more than others, namely the older generation. Nowadays everything happens over the internet, this includes banking and digital mailbox systems.</br>
+                </br>
 
+                We've come to the point where you must have an online presence to manage your life. Our vision is to close the digital gap, making sure that everyone can reap the benefits of technological advancement.
+
+            </p>
+            <p>
+                A survey done by Telenor and the pension fund, shows that half of the Norwegian population, from the ages of 34-50, are struggling to keep up with technological advancements in society. The percentage only increases with age and many fear a digital divide. A different survey done by the Telenor shows that 19 percent of the older generation feel left out, because they don’t use net-based banking systems and other official services. The same amount is said to have a case of digital anxiety. The older generation believe the youth spend too much time online, and fear this may create a digital divide between the generations. </br>
+                </br>
+            </p>
+        </div>
+    </div>
+
+  <!--  How it works section -->
     <h2>How it works</h2>
     <div class="how-it-works-section" id="howItWorksId" role="contentinfo" onmousemove="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" onwheel="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" onfocus="howItWorksTxtFadeIn(),howItWorksImgFadeIn()" tabindex="9">
 
         <div class="how-it-works-wrapper">
-
-
             <img src="media/how-it-works.png" id="howItWorksImgId" alt="How it works image">
-
-
             <div class="how-it-works-text" id="howItWorksTxtId">
-                <p>Be my IT-guide is dedicated to helping solve day-to-day tech problems. We connect the helpers to those that need their service. Users can talk directly to their guides through screen-sharing and chat/video calls making IT problem solving
-                   quick and easy.
-                  </p>
+                <p>The IT-guides are dedicated to help you solve day-to-day tech problems. We connect the guides to those in need of their services. Users can communicate directly with their guides through screen-sharing, chat and video calls, ensuring the problems are solved in a quick and easy manner.
+
+                </p>
             </div>
-
         </div>
-
     </div>
 
-
+  <!--  Feature section -->
     <div class="feature-section" id="feature" tabindex="10">
-
         <h2> Features </h2>
 
         <div class="feature-wrapper">
@@ -142,42 +105,50 @@
                 <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 <h3>Quick and easy registration!</h3>
-                <p>The registration process is easier than ever! After picking if you need help or want to help, all you have to is to type in your email and verify it. You can also register using Facebook or Google+.</p>
+                <p>The in-app registration process is smoother than ever! After deciding whether you need help or wish to help, all you have to do is enter your email and verify it. You can also register using Facebook or Google+.</p>
             </div>
 
             <div class="feature">
                 <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 <h3> Get help in your language!</h3>
-                <p>The app lets users select their choice of language to ensure that language barriers do not become a factor in the problem-solving.</p>
-            </div>
-
-            <div class="feature">
-                <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
-                <i class="fa fa-star fa-2x" aria-hidden="true"></i>
-                <h3> Chat/video</h3>
-                <p>Having both chat, and video sharing allows the user to choose how they want to receive the IT support, making the app user-friendly.</p>
+                <p>Our app allows users to select their choice of language, ensuring that language barriers do not become an obstacle in the process.</p>
             </div>
 
             <div class="feature">
                 <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 <h3>Screen sharing</h3>
-                <p>The screen sharing feature is a handy way to aid the user solve their IT-related problems. Screen sharing minimizes potential misunderstandings.</p>
+                <p>The app includes chat, video and screen-sharing to give the users freedom to choose their desired method of assistance. The screen-sharing feature is a handy way to aid users with their IT-related problems, and minimizes the potential of misinterpretation.</p>
             </div>
 
             <div class="feature">
                 <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 <h3>24/7 support</h3>
-                <p>Thanks to our global community we are available to help 24/7. Be my IT guide will be at your service even when your loved ones are not there to help you.</p>
+                <p>Thanks to our global community, we are available to help 24/7. We will be at your service even when your loved ones are not there to help you.</p>
             </div>
 
             <div class="feature">
                 <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 <h3>Evaluation system</h3>
-                <p>Our evaluation system is unique, it allows users to the rate the interaction with the IT-guides and vice versa. By having a two-way evaluation system we make sure that the interactions within the community are kept polite and mannered.</p> 
+                <p>Our evaluation system is unique, it allows users to the rate the interaction with the IT-guides and vice versa. By having a two-way evaluation system we make sure that the interactions within the community are kept polite and mannered.</p>
+            </div>
+
+            <div class="feature">
+                <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
+                <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+                <h3>Trophy system</h3>
+                <p>Helping others has never been more fun! Earn trophies by helping others and brag to your friends and colleagues. Earn special trophies by helping frequently.
+                </p>
+            </div>
+
+            <div class="feature">
+                <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
+                <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+                <h3>Tips and tricks</h3>
+                <p>We even have a tips section, to help you with everything from everyday essentials to more advanced issues.</p>
             </div>
 
             <div class="feature">
@@ -187,40 +158,18 @@
                 <p>Our app is completely free to use, and we promise to keep it that way! This ensures that everyone that needs help receives it, regardless of their economic status.</p>
             </div>
 
-            <div class="feature">
-                <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
-                <i class="fa fa-star fa-2x" aria-hidden="true"></i>
-                <h3>Trophy section</h3>
-                <p>Helping others has never been this much fun! Earn trophies by helping others and show off to your friends and colleagues. Earn special trophies by helping several days in a row.  Who knows, this might even impress your future employers.</p>
-            </div>
-
-            <div class="feature">
-                <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
-                <i class="fa fa-star fa-2x" aria-hidden="true"></i>
-                <h3>Ranking system</h3>
-                <p>If collecting trophies isn't enough for you we also have a ranking system! Compete with others both on the local and global stage. Show your knowledge and prove your dedication, do you have what it takes to reach the top?</p>
-            </div>
-
-
-
-            <div class="feature">
-                <i class="fa fa-circle fa-4x" aria-hidden="true"></i>
-                <i class="fa fa-star fa-2x" aria-hidden="true"></i>
-                <h3>Tips and tricks</h3>
-                <p>We even have a tips section, to help you with everything from everyday essentials to more advanced issues.</p>
-            </div>
-
-
         </div>
 
     </div>
 
+  <!--  Screen sharing section -->
     <div class="video-container" onwheel="replayVideo()" tabindex="11">
 
         <video autoplay loop muted>
 							 <source src="media\screen-sharing.mp4" type="video/mp4" />
 
 					 </video>
+             <!--  Add overlay over the vedio -->
         <div class="overlay">
 
         </div>
@@ -231,6 +180,7 @@
         </div>
     </div>
 
+  <!--  Save sharing section -->
     <div class="save-sharing" tabindex="12">
 
         <div class="save-sharing-txt">
@@ -246,10 +196,11 @@
         </div>
     </div>
 
+  <!--  The team section -->
     <h2> The Team</h2>
     <div class=team id="team" tabindex="13">
         <div class="team-member" tabindex="14">
-          <a href="#" target="_blank">
+            <a href="#" target="_blank">
             <img  src="media/Team-member-Bazewit.jpg" alt="Image of team member Bezawit Walelegn"> </a>
             <p>Bezawit Walelegn</p>
         </div>
@@ -270,7 +221,7 @@
         </div>
         <div class="team-member" tabindex="18">
 
-          <a href="https://www.facebook.com/maha.shams19" target="_blank">
+            <a href="https://www.facebook.com/maha.shams19" target="_blank">
           <img  src="media/Team-member-Maha.png" alt="Image of team member Maha Shams"> </a>
             <p>Maha Shams</p>
 
@@ -278,6 +229,7 @@
 
     </div>
 
+  <!--  Download section -->
     <div class="Download" id="getitnow" tabindex="19">
 
         <h2 id="DownloadMe">Download Now</h2>
@@ -292,6 +244,7 @@
         </div>
     </div>
 
+  <!--  The footer section -->
     <div class="FooterTop">
         <h3>Connect with us on social media!</h3>
         <div class="FooterInnhold">
@@ -311,7 +264,7 @@
         <div class="FooterEmail">
             <h3>Subscribe to our newsletter!</h3>
             <div class="Abonner">
-                <form action="">
+                <form action="index.html" method="post">
                     <input type="email" name="email" placeholder="name@example.com" tabindex="26">
                     <button class="Sub-button" type="submit" tabindex="27">Subscribe!</button>
                 </form>
